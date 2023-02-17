@@ -1,6 +1,26 @@
 .btn-primary {
-  background-color: #575656;
+  background-color: #575656 !important;
   box-shadow: none;
+}
+
+.active > .page-link, .page-link.active {
+  background-color: #575656 !important;
+  border-color: #575656 !important;
+}
+
+.buttons-collection {
+  visibility: hidden;
+}
+
+.buttons-pdf {
+  border-top-right-radius: 0.2rem !important;
+  border-bottom-right-radius: 0.2rem !important;
+}
+
+.table tbody tr td {
+  vertical-align: middle;
+  padding-bottom: 3px;
+  padding-top: 3px;
 }
 
 body .navbar-brand-box {

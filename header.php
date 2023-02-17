@@ -222,10 +222,10 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
-                                <a class="dropdown-item" href="apps-contacts-profile.html"><i class="mdi mdi-face-profile font-size-16 align-middle me-1"></i> Profile</a>
-                                <a class="dropdown-item" href="auth-lock-screen.html"><i class="mdi mdi-lock font-size-16 align-middle me-1"></i> Lock Screen</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-cog font-size-16 align-middle me-1"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-account font-size-16 align-middle me-1"></i>Profile</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="auth-logout.html"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
                             </div>
                         </div>
 
@@ -260,9 +260,9 @@
                                     <span data-key="t-tables">Peoples</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="#" data-key="t-basic-tables">Clients</a></li>
-                                    <li><a href="#" data-key="t-data-tables">Sites</a></li>
-                                    <li><a href="#" data-key="t-responsive-table">Staff</a></li>
+                                    <li><a href="client.php" data-key="t-basic-tables">Clients</a></li>
+                                    <li><a href="sites.php" data-key="t-data-tables">Sites</a></li>
+                                    <li><a href="staff.php" data-key="t-responsive-table">Staff</a></li>
                                     
                                 </ul>
                             </li>
@@ -274,7 +274,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="timesheet.php">
                                     <i data-feather="clock"></i>
                                     <span data-key="t-timesheet">Timesheet</span>
                                 </a>

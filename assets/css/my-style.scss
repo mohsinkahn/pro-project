@@ -1,15 +1,48 @@
 
 // variables color
 $theme-main-color:#575656;
-
+$table-head-color:#fbfaff;
 
 
 
 // custom classes
 
 .btn-primary{
-    background-color:$theme-main-color;
+    background-color:$theme-main-color!important;
     box-shadow: none;
+}
+.active>.page-link, .page-link.active{
+    background-color:$theme-main-color!important;
+    border-color:$theme-main-color!important; 
+}
+.buttons-collection{
+visibility: hidden;
+}
+.buttons-pdf{
+border-top-right-radius: .2rem!important;
+border-bottom-right-radius: .2rem!important;
+}
+
+// end
+
+.table{
+    // thead{
+    //     tr{
+    //         th{
+    //             background-color:$table-head-color;
+    //         }
+    //     }
+    // }
+    tbody{
+        tr{
+            td{
+                vertical-align:middle;
+                padding-bottom: 3px;
+                padding-top: 3px;
+            }
+        }
+    }
+     
 }
 
 
