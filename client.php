@@ -10,853 +10,492 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row align-items-center">
-                            <div class="col-md-8">
-                            <h4 class="card-title">Clients</h4>
+                            <div class="col-md-8 col-6">
+                                <h4 class="card-title">Clients</h4>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-6">
                                 <a href="#" class="btn btn-primary float-end">Add Client</a>
                             </div>
                         </div>
-                        
-                        
+
+
                     </div>
                     <div class="card-body">
-                        <div class="table-rep-plugin">
-                            <div class="table-wrapper">
-                                <div class="btn-toolbar">
-                                    <div class="btn-group focus-btn-group"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-screenshot"></span> Focus</button></div>
-                                    <div class="btn-group dropdown-btn-group pull-right"><button type="button" class="btn btn-default">Display all</button><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown">Display <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                            <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-1" id="toggle-tech-companies-1-col-1" value="tech-companies-1-col-1"> <label for="toggle-tech-companies-1-col-1">Last Trade</label></li>
-                                            <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-2" id="toggle-tech-companies-1-col-2" value="tech-companies-1-col-2"> <label for="toggle-tech-companies-1-col-2">Trade Time</label></li>
-                                            <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-3" id="toggle-tech-companies-1-col-3" value="tech-companies-1-col-3"> <label for="toggle-tech-companies-1-col-3">Change</label></li>
-                                            <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-4" id="toggle-tech-companies-1-col-4" value="tech-companies-1-col-4"> <label for="toggle-tech-companies-1-col-4">Prev Close</label></li>
-                                            <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-5" id="toggle-tech-companies-1-col-5" value="tech-companies-1-col-5"> <label for="toggle-tech-companies-1-col-5">Open</label></li>
-                                            <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-6" id="toggle-tech-companies-1-col-6" value="tech-companies-1-col-6"> <label for="toggle-tech-companies-1-col-6">Bid</label></li>
-                                            <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-7" id="toggle-tech-companies-1-col-7" value="tech-companies-1-col-7"> <label for="toggle-tech-companies-1-col-7">Ask</label></li>
-                                            <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-8" id="toggle-tech-companies-1-col-8" value="tech-companies-1-col-8"> <label for="toggle-tech-companies-1-col-8">1y Target Est</label></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="table-responsive mb-0 fixed-solution" data-pattern="priority-columns">
-                                    <div class="sticky-table-header" style="height: 47.5px; visibility: hidden; width: auto; top: -1px;">
-                                        <table id="tech-companies-1-clone" class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th id="tech-companies-1-col-0-clone">Company</th>
-                                                    <th data-priority="1" id="tech-companies-1-col-1-clone">Last Trade</th>
-                                                    <th data-priority="3" id="tech-companies-1-col-2-clone">Trade Time</th>
-                                                    <th data-priority="1" id="tech-companies-1-col-3-clone">Change</th>
-                                                    <th data-priority="3" id="tech-companies-1-col-4-clone">Prev Close</th>
-                                                    <th data-priority="3" id="tech-companies-1-col-5-clone">Open</th>
-                                                    <th data-priority="6" id="tech-companies-1-col-6-clone">Bid</th>
-                                                    <th data-priority="6" id="tech-companies-1-col-7-clone">Ask</th>
-                                                    <th data-priority="6" id="tech-companies-1-col-8-clone">1y Target Est</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                                </tr>
-                                                <!-- Repeat -->
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                                </tr>
-                                                <!-- Repeat -->
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                                </tr>
-                                                <!-- Repeat -->
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                                </tr>
-                                                <!-- Repeat -->
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                    <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                    <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                    <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <table id="tech-companies-1" class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th id="tech-companies-1-col-0">Company</th>
-                                                <th data-priority="1" id="tech-companies-1-col-1">Last Trade</th>
-                                                <th data-priority="3" id="tech-companies-1-col-2">Trade Time</th>
-                                                <th data-priority="1" id="tech-companies-1-col-3">Change</th>
-                                                <th data-priority="3" id="tech-companies-1-col-4">Prev Close</th>
-                                                <th data-priority="3" id="tech-companies-1-col-5">Open</th>
-                                                <th data-priority="6" id="tech-companies-1-col-6">Bid</th>
-                                                <th data-priority="6" id="tech-companies-1-col-7">Ask</th>
-                                                <th data-priority="6" id="tech-companies-1-col-8">1y Target Est</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                            </tr>
-                                            <!-- Repeat -->
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                            </tr>
-                                            <!-- Repeat -->
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                            </tr>
-                                            <!-- Repeat -->
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                            </tr>
-                                            <!-- Repeat -->
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">GOOG <span class="co-name">Google Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">597.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:12PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">14.81 (2.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">582.93</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">597.95</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">597.73 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">597.91 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">731.10</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AAPL <span class="co-name">Apple Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">378.94</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:22PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">5.74 (1.54%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">373.20</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">381.02</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">378.92 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">378.99 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">505.94</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">AMZN <span class="co-name">Amazon.com Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">191.55</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:23PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">3.16 (1.68%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">188.39</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">194.99</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">191.52 x 300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">191.58 x 100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">240.32</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">ORCL <span class="co-name">Oracle Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">31.15</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:44PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">1.41 (4.72%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">29.74</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">30.67</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">31.14 x 6500</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">31.15 x 3200</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">36.11</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">MSFT <span class="co-name">Microsoft Corporation</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">25.50</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:27PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.66 (2.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">24.84</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">25.37</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">25.50 x 71100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">25.51 x 17800</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">31.50</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">18.65</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:45PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.97 (5.49%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">17.68</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">18.23</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">18.65 x 10300</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">18.66 x 24000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">21.12</td>
-                                            </tr>
-                                            <tr>
-                                                <th data-org-colspan="1" data-columns="tech-companies-1-col-0">YHOO <span class="co-name">Yahoo! Inc.</span></th>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-1">15.81</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-2">12:25PM</td>
-                                                <td data-org-colspan="1" data-priority="1" data-columns="tech-companies-1-col-3">0.11 (0.67%)</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-4">15.70</td>
-                                                <td data-org-colspan="1" data-priority="3" data-columns="tech-companies-1-col-5">15.94</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-6">15.79 x 6100</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-7">15.80 x 17000</td>
-                                                <td data-org-colspan="1" data-priority="6" data-columns="tech-companies-1-col-8">18.16</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                        <div class="table-responsive">
+                        <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap w-100">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>
 
+
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td>2011/04/25</td>
+                                    <td>$320,800</td>
+                                </tr>
+                                <tr>
+                                    <td>Garrett Winters</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>63</td>
+                                    <td>2011/07/25</td>
+                                    <td>$170,750</td>
+                                </tr>
+                                <tr>
+                                    <td>Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td>66</td>
+                                    <td>2009/01/12</td>
+                                    <td>$86,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Cedric Kelly</td>
+                                    <td>Senior Javascript Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td>2012/03/29</td>
+                                    <td>$433,060</td>
+                                </tr>
+                                <tr>
+                                    <td>Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>$162,700</td>
+                                </tr>
+                                <tr>
+                                    <td>Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    <td>61</td>
+                                    <td>2012/12/02</td>
+                                    <td>$372,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Herrod Chandler</td>
+                                    <td>Sales Assistant</td>
+                                    <td>San Francisco</td>
+                                    <td>59</td>
+                                    <td>2012/08/06</td>
+                                    <td>$137,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Rhona Davidson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>Tokyo</td>
+                                    <td>55</td>
+                                    <td>2010/10/14</td>
+                                    <td>$327,900</td>
+                                </tr>
+                                <tr>
+                                    <td>Colleen Hurst</td>
+                                    <td>Javascript Developer</td>
+                                    <td>San Francisco</td>
+                                    <td>39</td>
+                                    <td>2009/09/15</td>
+                                    <td>$205,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Sonya Frost</td>
+                                    <td>Software Engineer</td>
+                                    <td>Edinburgh</td>
+                                    <td>23</td>
+                                    <td>2008/12/13</td>
+                                    <td>$103,600</td>
+                                </tr>
+                                <tr>
+                                    <td>Jena Gaines</td>
+                                    <td>Office Manager</td>
+                                    <td>London</td>
+                                    <td>30</td>
+                                    <td>2008/12/19</td>
+                                    <td>$90,560</td>
+                                </tr>
+                                <tr>
+                                    <td>Quinn Flynn</td>
+                                    <td>Support Lead</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td>2013/03/03</td>
+                                    <td>$342,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Charde Marshall</td>
+                                    <td>Regional Director</td>
+                                    <td>San Francisco</td>
+                                    <td>36</td>
+                                    <td>2008/10/16</td>
+                                    <td>$470,600</td>
+                                </tr>
+                                <tr>
+                                    <td>Haley Kennedy</td>
+                                    <td>Senior Marketing Designer</td>
+                                    <td>London</td>
+                                    <td>43</td>
+                                    <td>2012/12/18</td>
+                                    <td>$313,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Tatyana Fitzpatrick</td>
+                                    <td>Regional Director</td>
+                                    <td>London</td>
+                                    <td>19</td>
+                                    <td>2010/03/17</td>
+                                    <td>$385,750</td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Silva</td>
+                                    <td>Marketing Designer</td>
+                                    <td>London</td>
+                                    <td>66</td>
+                                    <td>2012/11/27</td>
+                                    <td>$198,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Paul Byrd</td>
+                                    <td>Chief Financial Officer (CFO)</td>
+                                    <td>New York</td>
+                                    <td>64</td>
+                                    <td>2010/06/09</td>
+                                    <td>$725,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Gloria Little</td>
+                                    <td>Systems Administrator</td>
+                                    <td>New York</td>
+                                    <td>59</td>
+                                    <td>2009/04/10</td>
+                                    <td>$237,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Bradley Greer</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td>41</td>
+                                    <td>2012/10/13</td>
+                                    <td>$132,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Dai Rios</td>
+                                    <td>Personnel Lead</td>
+                                    <td>Edinburgh</td>
+                                    <td>35</td>
+                                    <td>2012/09/26</td>
+                                    <td>$217,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Jenette Caldwell</td>
+                                    <td>Development Lead</td>
+                                    <td>New York</td>
+                                    <td>30</td>
+                                    <td>2011/09/03</td>
+                                    <td>$345,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Yuri Berry</td>
+                                    <td>Chief Marketing Officer (CMO)</td>
+                                    <td>New York</td>
+                                    <td>40</td>
+                                    <td>2009/06/25</td>
+                                    <td>$675,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Caesar Vance</td>
+                                    <td>Pre-Sales Support</td>
+                                    <td>New York</td>
+                                    <td>21</td>
+                                    <td>2011/12/12</td>
+                                    <td>$106,450</td>
+                                </tr>
+                                <tr>
+                                    <td>Doris Wilder</td>
+                                    <td>Sales Assistant</td>
+                                    <td>Sidney</td>
+                                    <td>23</td>
+                                    <td>2010/09/20</td>
+                                    <td>$85,600</td>
+                                </tr>
+                                <tr>
+                                    <td>Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09</td>
+                                    <td>$1,200,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Gavin Joyce</td>
+                                    <td>Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td>42</td>
+                                    <td>2010/12/22</td>
+                                    <td>$92,575</td>
+                                </tr>
+                                <tr>
+                                    <td>Jennifer Chang</td>
+                                    <td>Regional Director</td>
+                                    <td>Singapore</td>
+                                    <td>28</td>
+                                    <td>2010/11/14</td>
+                                    <td>$357,650</td>
+                                </tr>
+                                <tr>
+                                    <td>Brenden Wagner</td>
+                                    <td>Software Engineer</td>
+                                    <td>San Francisco</td>
+                                    <td>28</td>
+                                    <td>2011/06/07</td>
+                                    <td>$206,850</td>
+                                </tr>
+                                <tr>
+                                    <td>Fiona Green</td>
+                                    <td>Chief Operating Officer (COO)</td>
+                                    <td>San Francisco</td>
+                                    <td>48</td>
+                                    <td>2010/03/11</td>
+                                    <td>$850,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Shou Itou</td>
+                                    <td>Regional Marketing</td>
+                                    <td>Tokyo</td>
+                                    <td>20</td>
+                                    <td>2011/08/14</td>
+                                    <td>$163,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Michelle House</td>
+                                    <td>Integration Specialist</td>
+                                    <td>Sidney</td>
+                                    <td>37</td>
+                                    <td>2011/06/02</td>
+                                    <td>$95,400</td>
+                                </tr>
+                                <tr>
+                                    <td>Suki Burks</td>
+                                    <td>Developer</td>
+                                    <td>London</td>
+                                    <td>53</td>
+                                    <td>2009/10/22</td>
+                                    <td>$114,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescott Bartlett</td>
+                                    <td>Technical Author</td>
+                                    <td>London</td>
+                                    <td>27</td>
+                                    <td>2011/05/07</td>
+                                    <td>$145,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Gavin Cortez</td>
+                                    <td>Team Leader</td>
+                                    <td>San Francisco</td>
+                                    <td>22</td>
+                                    <td>2008/10/26</td>
+                                    <td>$235,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Martena Mccray</td>
+                                    <td>Post-Sales support</td>
+                                    <td>Edinburgh</td>
+                                    <td>46</td>
+                                    <td>2011/03/09</td>
+                                    <td>$324,050</td>
+                                </tr>
+                                <tr>
+                                    <td>Unity Butler</td>
+                                    <td>Marketing Designer</td>
+                                    <td>San Francisco</td>
+                                    <td>47</td>
+                                    <td>2009/12/09</td>
+                                    <td>$85,675</td>
+                                </tr>
+                                <tr>
+                                    <td>Howard Hatfield</td>
+                                    <td>Office Manager</td>
+                                    <td>San Francisco</td>
+                                    <td>51</td>
+                                    <td>2008/12/16</td>
+                                    <td>$164,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Hope Fuentes</td>
+                                    <td>Secretary</td>
+                                    <td>San Francisco</td>
+                                    <td>41</td>
+                                    <td>2010/02/12</td>
+                                    <td>$109,850</td>
+                                </tr>
+                                <tr>
+                                    <td>Vivian Harrell</td>
+                                    <td>Financial Controller</td>
+                                    <td>San Francisco</td>
+                                    <td>62</td>
+                                    <td>2009/02/14</td>
+                                    <td>$452,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Timothy Mooney</td>
+                                    <td>Office Manager</td>
+                                    <td>London</td>
+                                    <td>37</td>
+                                    <td>2008/12/11</td>
+                                    <td>$136,200</td>
+                                </tr>
+                                <tr>
+                                    <td>Jackson Bradshaw</td>
+                                    <td>Director</td>
+                                    <td>New York</td>
+                                    <td>65</td>
+                                    <td>2008/09/26</td>
+                                    <td>$645,750</td>
+                                </tr>
+                                <tr>
+                                    <td>Olivia Liang</td>
+                                    <td>Support Engineer</td>
+                                    <td>Singapore</td>
+                                    <td>64</td>
+                                    <td>2011/02/03</td>
+                                    <td>$234,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Bruno Nash</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td>38</td>
+                                    <td>2011/05/03</td>
+                                    <td>$163,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Sakura Yamamoto</td>
+                                    <td>Support Engineer</td>
+                                    <td>Tokyo</td>
+                                    <td>37</td>
+                                    <td>2009/08/19</td>
+                                    <td>$139,575</td>
+                                </tr>
+                                <tr>
+                                    <td>Thor Walton</td>
+                                    <td>Developer</td>
+                                    <td>New York</td>
+                                    <td>61</td>
+                                    <td>2013/08/11</td>
+                                    <td>$98,540</td>
+                                </tr>
+                                <tr>
+                                    <td>Finn Camacho</td>
+                                    <td>Support Engineer</td>
+                                    <td>San Francisco</td>
+                                    <td>47</td>
+                                    <td>2009/07/07</td>
+                                    <td>$87,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Serge Baldwin</td>
+                                    <td>Data Coordinator</td>
+                                    <td>Singapore</td>
+                                    <td>64</td>
+                                    <td>2012/04/09</td>
+                                    <td>$138,575</td>
+                                </tr>
+                                <tr>
+                                    <td>Zenaida Frank</td>
+                                    <td>Software Engineer</td>
+                                    <td>New York</td>
+                                    <td>63</td>
+                                    <td>2010/01/04</td>
+                                    <td>$125,250</td>
+                                </tr>
+                                <tr>
+                                    <td>Zorita Serrano</td>
+                                    <td>Software Engineer</td>
+                                    <td>San Francisco</td>
+                                    <td>56</td>
+                                    <td>2012/06/01</td>
+                                    <td>$115,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Jennifer Acosta</td>
+                                    <td>Junior Javascript Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td>43</td>
+                                    <td>2013/02/01</td>
+                                    <td>$75,650</td>
+                                </tr>
+                                <tr>
+                                    <td>Cara Stevens</td>
+                                    <td>Sales Assistant</td>
+                                    <td>New York</td>
+                                    <td>46</td>
+                                    <td>2011/12/06</td>
+                                    <td>$145,600</td>
+                                </tr>
+                                <tr>
+                                    <td>Hermione Butler</td>
+                                    <td>Regional Director</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2011/03/21</td>
+                                    <td>$356,250</td>
+                                </tr>
+                                <tr>
+                                    <td>Lael Greer</td>
+                                    <td>Systems Administrator</td>
+                                    <td>London</td>
+                                    <td>21</td>
+                                    <td>2009/02/27</td>
+                                    <td>$103,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Jonas Alexander</td>
+                                    <td>Developer</td>
+                                    <td>San Francisco</td>
+                                    <td>30</td>
+                                    <td>2010/07/14</td>
+                                    <td>$86,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Shad Decker</td>
+                                    <td>Regional Director</td>
+                                    <td>Edinburgh</td>
+                                    <td>51</td>
+                                    <td>2008/11/13</td>
+                                    <td>$183,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Bruce</td>
+                                    <td>Javascript Developer</td>
+                                    <td>Singapore</td>
+                                    <td>29</td>
+                                    <td>2011/06/27</td>
+                                    <td>$183,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Donna Snider</td>
+                                    <td>Customer Support</td>
+                                    <td>New York</td>
+                                    <td>27</td>
+                                    <td>2011/01/25</td>
+                                    <td>$112,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         </div>
+                        
 
                     </div>
                 </div>

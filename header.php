@@ -28,6 +28,13 @@
         <!-- App Css-->
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+          <!-- DataTables -->
+          <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Responsive datatable examples -->
+        <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" /> 
+
     </head>
 
     <body>
@@ -261,7 +268,7 @@
                             </li>
                             
                             <li>
-                                <a href="#">
+                                <a href="diary.php">
                                     <i data-feather="book"></i>
                                     <span data-key="t-diary">Diary</span>
                                 </a>
@@ -290,12 +297,12 @@
                                     <span data-key="t-invoices">Invoices & Applications</span>
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">
                                     <i data-feather="list"></i>
                                     <span data-key="t-tasks">Tasks</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#">
                                     <i data-feather="file-text"></i>

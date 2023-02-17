@@ -1,3 +1,8 @@
+.btn-primary {
+  background-color: #575656;
+  box-shadow: none;
+}
+
 body .navbar-brand-box {
   text-align: center;
 }/*# sourceMappingURL=my-style.css.map */

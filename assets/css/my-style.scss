@@ -1,4 +1,18 @@
 
+// variables color
+$theme-main-color:#575656;
+
+
+
+
+// custom classes
+
+.btn-primary{
+    background-color:$theme-main-color;
+    box-shadow: none;
+}
+
+
 body{
     .navbar-brand-box{
         text-align: center;
