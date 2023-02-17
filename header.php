@@ -21,6 +21,10 @@
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- my style css -->
+        <link href="assets/css/my-style.css" rel="stylesheet" type="text/css" />
+
         <!-- App Css-->
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
@@ -41,19 +45,21 @@
                         <div class="navbar-brand-box">
                             <a href="index.php" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.svg" alt="" height="24">
+                                    <img src="assets/images/logo.png" alt="" height="24">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-sm.svg" alt="" height="24"> <span class="logo-txt">Minia</span>
+                                    <img src="assets/images/logo.png" alt=""  style="height:61px;margin-top:8px;">
+                                    
                                 </span>
                             </a>
 
                             <a href="index.php" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.svg" alt="" height="24">
+                                    <img src="assets/images/logo-dark.png" alt="" height="24">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-sm.svg" alt="" height="24"> <span class="logo-txt">Minia</span>
+                                    <img src="assets/images/logo-dark.png" alt="" style="height:61px;margin-top:8px;">
+                                    
                                 </span>
                             </a>
                         </div>
@@ -242,23 +248,18 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="javascript: void(0);" class="has-arrow">
                                     <i data-feather="users"></i>
-                                    <span data-key="t-client">Clients</span>
+                                    <span data-key="t-tables">Peoples</span>
                                 </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="#" data-key="t-basic-tables">Clients</a></li>
+                                    <li><a href="#" data-key="t-data-tables">Sites</a></li>
+                                    <li><a href="#" data-key="t-responsive-table">Staff</a></li>
+                                    
+                                </ul>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i data-feather="users"></i>
-                                    <span data-key="t-site">Sites</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i data-feather="users"></i>
-                                    <span data-key="t-staff">Staff</span>
-                                </a>
-                            </li>
+                            
                             <li>
                                 <a href="#">
                                     <i data-feather="book"></i>
