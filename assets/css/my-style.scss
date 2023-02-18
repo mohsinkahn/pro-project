@@ -18,9 +18,22 @@ $table-head-color:#fbfaff;
 .buttons-collection{
 visibility: hidden;
 }
+
+.buttons-copy{
+    background-color:$theme-main-color!important;
+    border-color:$theme-main-color!important;
+}
+
+.buttons-excel{
+    background-color:$theme-main-color!important;
+    border-color:$theme-main-color!important;
+}
+
 .buttons-pdf{
 border-top-right-radius: .2rem!important;
 border-bottom-right-radius: .2rem!important;
+background-color:$theme-main-color!important;
+border-color:$theme-main-color!important;
 }
 
 .table-responsive{

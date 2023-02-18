@@ -12,9 +12,21 @@
   visibility: hidden;
 }
 
+.buttons-copy {
+  background-color: #575656 !important;
+  border-color: #575656 !important;
+}
+
+.buttons-excel {
+  background-color: #575656 !important;
+  border-color: #575656 !important;
+}
+
 .buttons-pdf {
   border-top-right-radius: 0.2rem !important;
   border-bottom-right-radius: 0.2rem !important;
+  background-color: #575656 !important;
+  border-color: #575656 !important;
 }
 
 .table-responsive {
