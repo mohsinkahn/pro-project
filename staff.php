@@ -33,7 +33,7 @@
                                         <th>Mobile Phone</th>
                                         <th>Email</th>
                                         <th>Employee ID</th>
-                                        <th>Actions</th>
+                                        <th style="width:50px;">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>

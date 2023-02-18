@@ -17,6 +17,15 @@
   border-bottom-right-radius: 0.2rem !important;
 }
 
+.table-responsive {
+  overflow-x: inherit;
+}
+
+@media (max-width: 767px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
 .table tbody tr td {
   vertical-align: middle;
   padding-bottom: 3px;

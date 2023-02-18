@@ -16,7 +16,7 @@
                                 <h4 class="card-title mb-0">Clients</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#" class="btn btn-primary float-end">Add Client</a>
+                                <a href="addclient.php" class="btn btn-primary float-end">Add Client</a>
                             </div>
                         </div>
 
@@ -32,7 +32,7 @@
                                         <th>Last Name</th>
                                         <th>Phone</th>
                                         <th>Email</th>
-                                        <th>Actions</th>
+                                        <th style="width:50px;">Actions</th>
                                     </tr>
                                 </thead>
 

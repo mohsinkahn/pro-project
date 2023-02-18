@@ -15,7 +15,7 @@
                                 <h4 class="card-title mb-0">Sites</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#" class="btn btn-primary float-end">Add Site</a>
+                                <a href="addsite.php" class="btn btn-primary float-end">Add Site</a>
                             </div>
                         </div>
 
@@ -32,7 +32,7 @@
                                         <th>Site Country</th>
                                         <th>Site Postcode</th>
                                         <th>Associated Customers</th>
-                                        <th>Actions</th>
+                                        <th style="width:50px;">Actions</th>
                                     </tr>
                                 </thead>
 

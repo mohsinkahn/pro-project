@@ -29,7 +29,7 @@
                                         <th>Jobs</th>
                                         <th>Assign</th>
                                         <th>Notes</th>
-                                        <th>Action</th>
+                                        <th style="width:50px;">Actions</th>
                                     </tr>
                                 </thead>
 

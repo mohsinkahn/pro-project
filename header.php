@@ -286,7 +286,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="quote.php">
                                     <i data-feather="clipboard"></i>
                                     <span data-key="t-quotes">Quotes</span>
                                 </a>
@@ -309,12 +309,12 @@
                                     <span data-key="t-bills">Bills</span>
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">
                                     <i data-feather="activity"></i>
                                     <span data-key="t-health">Health & Safety</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#">
                                     <i data-feather="check-square"></i>
@@ -334,23 +334,24 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="javascript: void(0);" class="has-arrow">
+                                    <i data-feather="folder"></i>
+                                    <span data-key="t-doc">Documents</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="gen_doc.php" data-key="t-basic-tables">General Document</a></li>
+                                    <li><a href="health&safe_doc.php" data-key="t-data-tables">Health & Safety</a></li>  
+                                </ul>
+                            </li>
+                            <li>
                                 <a href="#">
                                     <i data-feather="pie-chart"></i>
                                     <span data-key="t-report">Reports</span>
                                 </a>
                             </li>
                            
-                            <li>
-                                <a href="#">
-                                    <i data-feather="folder"></i>
-                                    <span data-key="t-doc">Documents</span>
-                                </a>
-                            </li>
-                         
-
+                           
                         </ul>
-
-                       
                     </div>
                     <!-- Sidebar -->
                 </div>

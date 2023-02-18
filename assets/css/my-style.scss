@@ -23,6 +23,16 @@ border-top-right-radius: .2rem!important;
 border-bottom-right-radius: .2rem!important;
 }
 
+.table-responsive{
+    overflow-x: inherit;
+}
+
+@media(max-width:767px){
+    .table-responsive{
+        overflow-x: auto;
+    }   
+}
+
 // end
 
 .table{
