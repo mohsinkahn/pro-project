@@ -2,9 +2,19 @@
 
 
 <style>
-
 .border-none {
     border: none !important;
+}
+
+.modal-content {
+    margin-top: 60px
+}
+
+.dz-message {
+    /* border : 2px solid red; */
+    width: max-content;
+    text-align: center;
+    margin-top: 50px
 }
 </style>
 
@@ -22,7 +32,7 @@
                                 <h4 class="card-title mb-0">Quotes</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#" class="btn btn-primary float-end">Add Quote</a>
+                                <a href="#" class="btn btn-primary float-end" >Add Quote</a>
                             </div>
                         </div>
                     </div>
@@ -63,15 +73,14 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#approved" role="tab"
+                                            <a class="nav-link" data-bs-toggle="tab" href="#approve" role="tab"
                                                 id="sms">
 
                                                 <span class=" d-sm-block">Approved</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#closed" role="tab"
-                                                id="sms">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#closed" role="tab" id="sms">
 
                                                 <span class=" d-sm-block">Closed/Archived</span>
                                             </a>
@@ -90,30 +99,33 @@
                                                 class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
-                                                        <th>S.No</th>
-                                                        <th>Staff Name</th>
-                                                        <th>Request Type</th>
-                                                        <th>Date</th>
-                                                        <th>Day</th>
-                                                        <th>Hours</th>
-                                                        <th>Cost</th>
-                                                        <th>Notes</th>
-                                                        <th>Action</th>
+                                                        <th> <input type="checkbox"></th>
+                                                        <th>Quote</th>
+                                                        <th>Status</th>
+                                                        <th>Client</th>
+                                                        <th>Site</th>
+                                                        <th>Project Manager</th>
+                                                        <th>Sell Price</th>
+                                                        <th>Created Date</th>
+                                                        <th>Approved Date</th>
+                                                        <th>Expiry Date</th>
+                                                        <th>Actions</th>
                                                     </tr>
                                                 </thead>
 
-
                                                 <tbody>
-
                                                     <tr>
-                                                        <td>01</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-info px-2" style="color:white">Open</span>
+                                                        </td>
+                                                        <td>Albert Henry</td>
+                                                        <td>Abc Site</td>
                                                         <td>John Doe</td>
-                                                        <td>Overtime</td>
-                                                        <td>02-Feb-2023</td>
-                                                        <td>Thursday</td>
-                                                        <td>2</td>
-                                                        <td>$10.00</td>
-                                                        <td>Note</td>
+                                                        <td>€2.00</td>
+                                                        <td>01/01/2023</td>
+                                                        <td>05/01/2023</td>
+                                                        <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -122,44 +134,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>02</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-warning px-2"
+                                                                style="color:white">Progress</span></td>
                                                         <td>Henry Albert</td>
-                                                        <td>Timesheet</td>
-                                                        <td>05-Dec-2022</td>
-                                                        <td>Saturday</td>
-                                                        <td>4</td>
-                                                        <td>$20.00</td>
-                                                        <td>Note</td>
-                                                        <td>
-                                                            <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </button>
-                                                                <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>03</td>
+                                                        <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
-                                                        <td>Timesheet</td>
-                                                        <td>24-Jan-2023</td>
-                                                        <td>Monday</td>
-                                                        <td>1</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>€18.00</td>
+                                                        <td>06/06/2022</td>
+                                                        <td>12/06/2022</td>
+                                                        <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -168,21 +161,26 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>04</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-success px-2"
+                                                                style="color:white">Complete</span>
+                                                        </td>
                                                         <td>Albert Methews</td>
-                                                        <td>Overtime</td>
-                                                        <td>18-Jan-2023</td>
-                                                        <td>Wednesday</td>
-                                                        <td>6</td>
-                                                        <td>$30.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Henry Clark</td>
+                                                        <td>€17.00</td>
+                                                        <td>02/08/2022</td>
+                                                        <td>15/08/2022</td>
+                                                        <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -191,21 +189,26 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>05</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-dark px-2"
+                                                                style="color:white">Approved</span>
+                                                        </td>
                                                         <td>Hudon Sandy</td>
-                                                        <td>Timesheet</td>
-                                                        <td>18-Feb-2023</td>
-                                                        <td>Saturday</td>
-                                                        <td>2</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Albert Methews</td>
+                                                        <td>€87.00</td>
+                                                        <td>06/02/2022</td>
+                                                        <td>15/02/2022</td>
+                                                        <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -214,50 +217,87 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
-
+                                                    <tr>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-danger px-2" style="color:white">Close</span>
+                                                        </td>
+                                                        <td>John Doe</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Alvin Clark</td>
+                                                        <td>€65.00</td>
+                                                        <td>03/04/2022</td>
+                                                        <td>15/04/2022</td>
+                                                        <td>25/04/2022</td>
+                                                        <td>
+                                                            <div class="dropdown chat-noti-dropdown">
+                                                                <button class="btn dropdown-toggle p-0" type="button"
+                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
 
                                                 </tbody>
+
+
+
                                             </table>
                                         </div>
                                     </div>
 
-                                    <!-- Tab panes  |  Timesheet Section Pane -->
+
+
+
+                                    <!-- Tab panes  |  All Section Pane -->
                                     <div class="tab-pane" id="timesheet" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons"
+                                                class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
-                                                        <th>S.No</th>
-                                                        <th>Staff Name</th>
-
-                                                        <th>Date</th>
-                                                        <th>Day</th>
-                                                        <th>Hours</th>
-                                                        <th>Cost</th>
-                                                        <th>Notes</th>
-                                                        <th>Action</th>
+                                                        <th> <input type="checkbox"></th>
+                                                        <th>Quote</th>
+                                                        <th>Status</th>
+                                                        <th>Client</th>
+                                                        <th>Site</th>
+                                                        <th>Project Manager</th>
+                                                        <th>Sell Price</th>
+                                                        <th>Created Date</th>
+                                                        <th>Approved Date</th>
+                                                        <th>Expiry Date</th>
+                                                        <th>Actions</th>
                                                     </tr>
                                                 </thead>
 
-
                                                 <tbody>
-
                                                     <tr>
-                                                        <td>01</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-info px-2" style="color:white">Open</span>
+                                                        </td>
+                                                        <td>Albert Henry</td>
+                                                        <td>Abc Site</td>
                                                         <td>John Doe</td>
-
-                                                        <td>02-Feb-2023</td>
-                                                        <td>Thursday</td>
-                                                        <td>2</td>
-                                                        <td>$10.00</td>
-                                                        <td>Note</td>
+                                                        <td>€2.00</td>
+                                                        <td>01/01/2023</td>
+                                                        <td>05/01/2023</td>
+                                                        <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -266,44 +306,24 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>02</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-info px-2" style="color:white">Open</span>
                                                         <td>Henry Albert</td>
-
-                                                        <td>05-Dec-2022</td>
-                                                        <td>Saturday</td>
-                                                        <td>4</td>
-                                                        <td>$20.00</td>
-                                                        <td>Note</td>
-                                                        <td>
-                                                            <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </button>
-                                                                <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>03</td>
+                                                        <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
-
-                                                        <td>24-Jan-2023</td>
-                                                        <td>Monday</td>
-                                                        <td>1</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>€18.00</td>
+                                                        <td>06/06/2022</td>
+                                                        <td>12/06/2022</td>
+                                                        <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -312,21 +332,24 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>04</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-info px-2" style="color:white">Open</span>
                                                         <td>Albert Methews</td>
-
-                                                        <td>18-Jan-2023</td>
-                                                        <td>Wednesday</td>
-                                                        <td>6</td>
-                                                        <td>$30.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Henry Clark</td>
+                                                        <td>€17.00</td>
+                                                        <td>02/08/2022</td>
+                                                        <td>15/08/2022</td>
+                                                        <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -335,21 +358,24 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>05</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-info px-2" style="color:white">Open</span>
                                                         <td>Hudon Sandy</td>
-
-                                                        <td>18-Feb-2023</td>
-                                                        <td>Saturday</td>
-                                                        <td>2</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Albert Methews</td>
+                                                        <td>€87.00</td>
+                                                        <td>06/02/2022</td>
+                                                        <td>15/02/2022</td>
+                                                        <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -358,48 +384,82 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-info px-2" style="color:white">Open</span>
+                                                        <td>John Doe</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Alvin Clark</td>
+                                                        <td>€65.00</td>
+                                                        <td>03/04/2022</td>
+                                                        <td>15/04/2022</td>
+                                                        <td>25/04/2022</td>
+                                                        <td>
+                                                            <div class="dropdown chat-noti-dropdown">
+                                                                <button class="btn dropdown-toggle p-0" type="button"
+                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
 
                                                 </tbody>
+
+
+
                                             </table>
                                         </div>
                                     </div>
-                                    <!-- Tab panes  |  Overtime Section Pane -->
+                                    <!-- Tab panes  |  All Section Pane -->
                                     <div class="tab-pane" id="overtime" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons"
+                                                class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
-                                                        <th>S.No</th>
-                                                        <th>Staff Name</th>
-
-                                                        <th>Date</th>
-                                                        <th>Day</th>
-                                                        <th>Hours</th>
-                                                        <th>Cost</th>
-                                                        <th>Notes</th>
-                                                        <th>Action</th>
+                                                        <th> <input type="checkbox"></th>
+                                                        <th>Quote</th>
+                                                        <th>Status</th>
+                                                        <th>Client</th>
+                                                        <th>Site</th>
+                                                        <th>Project Manager</th>
+                                                        <th>Sell Price</th>
+                                                        <th>Created Date</th>
+                                                        <th>Approved Date</th>
+                                                        <th>Expiry Date</th>
+                                                        <th>Actions</th>
                                                     </tr>
                                                 </thead>
 
-
                                                 <tbody>
-
                                                     <tr>
-                                                        <td>01</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-warning px-2"
+                                                                style="color:white">Progress</span></td>
+                                                        <td>Albert Henry</td>
+                                                        <td>Abc Site</td>
                                                         <td>John Doe</td>
-
-                                                        <td>02-Feb-2023</td>
-                                                        <td>Thursday</td>
-                                                        <td>2</td>
-                                                        <td>$10.00</td>
-                                                        <td>Note</td>
+                                                        <td>€2.00</td>
+                                                        <td>01/01/2023</td>
+                                                        <td>05/01/2023</td>
+                                                        <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -408,44 +468,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>02</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-warning px-2"
+                                                                style="color:white">Progress</span>
                                                         <td>Henry Albert</td>
-
-                                                        <td>05-Dec-2022</td>
-                                                        <td>Saturday</td>
-                                                        <td>4</td>
-                                                        <td>$20.00</td>
-                                                        <td>Note</td>
-                                                        <td>
-                                                            <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </button>
-                                                                <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>03</td>
+                                                        <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
-
-                                                        <td>24-Jan-2023</td>
-                                                        <td>Monday</td>
-                                                        <td>1</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>€18.00</td>
+                                                        <td>06/06/2022</td>
+                                                        <td>12/06/2022</td>
+                                                        <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -454,21 +495,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>04</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-warning px-2"
+                                                                style="color:white">Progress</span>
                                                         <td>Albert Methews</td>
-
-                                                        <td>18-Jan-2023</td>
-                                                        <td>Wednesday</td>
-                                                        <td>6</td>
-                                                        <td>$30.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Henry Clark</td>
+                                                        <td>€17.00</td>
+                                                        <td>02/08/2022</td>
+                                                        <td>15/08/2022</td>
+                                                        <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -477,21 +522,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>05</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-warning px-2"
+                                                                style="color:white">Progress</span>
                                                         <td>Hudon Sandy</td>
-
-                                                        <td>18-Feb-2023</td>
-                                                        <td>Saturday</td>
-                                                        <td>2</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Albert Methews</td>
+                                                        <td>€87.00</td>
+                                                        <td>06/02/2022</td>
+                                                        <td>15/02/2022</td>
+                                                        <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -500,47 +549,83 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-warning px-2"
+                                                                style="color:white">Progress</span>
+                                                        <td>John Doe</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Alvin Clark</td>
+                                                        <td>€65.00</td>
+                                                        <td>03/04/2022</td>
+                                                        <td>15/04/2022</td>
+                                                        <td>25/04/2022</td>
+                                                        <td>
+                                                            <div class="dropdown chat-noti-dropdown">
+                                                                <button class="btn dropdown-toggle p-0" type="button"
+                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
 
                                                 </tbody>
+
+
+
                                             </table>
                                         </div>
                                     </div>
+                                    <!-- Tab panes  |  All Section Pane -->
                                     <div class="tab-pane" id="complete" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons"
+                                                class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
-                                                        <th>S.No</th>
-                                                        <th>Staff Name</th>
-
-                                                        <th>Date</th>
-                                                        <th>Day</th>
-                                                        <th>Hours</th>
-                                                        <th>Cost</th>
-                                                        <th>Notes</th>
-                                                        <th>Action</th>
+                                                        <th> <input type="checkbox"></th>
+                                                        <th>Quote</th>
+                                                        <th>Status</th>
+                                                        <th>Client</th>
+                                                        <th>Site</th>
+                                                        <th>Project Manager</th>
+                                                        <th>Sell Price</th>
+                                                        <th>Created Date</th>
+                                                        <th>Approved Date</th>
+                                                        <th>Expiry Date</th>
+                                                        <th>Actions</th>
                                                     </tr>
                                                 </thead>
 
-
                                                 <tbody>
-
                                                     <tr>
-                                                        <td>01</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-success px-2"
+                                                                style="color:white">Complete</span></td>
+                                                        <td>Albert Henry</td>
+                                                        <td>Abc Site</td>
                                                         <td>John Doe</td>
-
-                                                        <td>02-Feb-2023</td>
-                                                        <td>Thursday</td>
-                                                        <td>2</td>
-                                                        <td>$10.00</td>
-                                                        <td>Note</td>
+                                                        <td>€2.00</td>
+                                                        <td>01/01/2023</td>
+                                                        <td>05/01/2023</td>
+                                                        <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -549,44 +634,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>02</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-success px-2"
+                                                                style="color:white">Complete</span>
                                                         <td>Henry Albert</td>
-
-                                                        <td>05-Dec-2022</td>
-                                                        <td>Saturday</td>
-                                                        <td>4</td>
-                                                        <td>$20.00</td>
-                                                        <td>Note</td>
-                                                        <td>
-                                                            <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </button>
-                                                                <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>03</td>
+                                                        <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
-
-                                                        <td>24-Jan-2023</td>
-                                                        <td>Monday</td>
-                                                        <td>1</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>€18.00</td>
+                                                        <td>06/06/2022</td>
+                                                        <td>12/06/2022</td>
+                                                        <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -595,21 +661,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>04</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-success px-2"
+                                                                style="color:white">Complete</span>
                                                         <td>Albert Methews</td>
-
-                                                        <td>18-Jan-2023</td>
-                                                        <td>Wednesday</td>
-                                                        <td>6</td>
-                                                        <td>$30.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Henry Clark</td>
+                                                        <td>€17.00</td>
+                                                        <td>02/08/2022</td>
+                                                        <td>15/08/2022</td>
+                                                        <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -618,21 +688,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>05</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-success px-2"
+                                                                style="color:white">Complete</span>
                                                         <td>Hudon Sandy</td>
-
-                                                        <td>18-Feb-2023</td>
-                                                        <td>Saturday</td>
-                                                        <td>2</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Albert Methews</td>
+                                                        <td>€87.00</td>
+                                                        <td>06/02/2022</td>
+                                                        <td>15/02/2022</td>
+                                                        <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -641,47 +715,83 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-success px-2"
+                                                                style="color:white">Complete</span>
+                                                        <td>John Doe</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Alvin Clark</td>
+                                                        <td>€65.00</td>
+                                                        <td>03/04/2022</td>
+                                                        <td>15/04/2022</td>
+                                                        <td>25/04/2022</td>
+                                                        <td>
+                                                            <div class="dropdown chat-noti-dropdown">
+                                                                <button class="btn dropdown-toggle p-0" type="button"
+                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
 
                                                 </tbody>
+
+
+
                                             </table>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="approved" role="tabpanel">
+                                    <!-- Tab panes  |  All Section Pane -->
+                                    <div class="tab-pane" id="approve" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons"
+                                                class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
-                                                        <th>S.No</th>
-                                                        <th>Staff Name</th>
-
-                                                        <th>Date</th>
-                                                        <th>Day</th>
-                                                        <th>Hours</th>
-                                                        <th>Cost</th>
-                                                        <th>Notes</th>
-                                                        <th>Action</th>
+                                                        <th> <input type="checkbox"></th>
+                                                        <th>Quote</th>
+                                                        <th>Status</th>
+                                                        <th>Client</th>
+                                                        <th>Site</th>
+                                                        <th>Project Manager</th>
+                                                        <th>Sell Price</th>
+                                                        <th>Created Date</th>
+                                                        <th>Approved Date</th>
+                                                        <th>Expiry Date</th>
+                                                        <th>Actions</th>
                                                     </tr>
                                                 </thead>
 
-
                                                 <tbody>
-
                                                     <tr>
-                                                        <td>01</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-dark px-2"
+                                                                style="color:white">Approved</span></td>
+                                                        <td>Albert Henry</td>
+                                                        <td>Abc Site</td>
                                                         <td>John Doe</td>
-
-                                                        <td>02-Feb-2023</td>
-                                                        <td>Thursday</td>
-                                                        <td>2</td>
-                                                        <td>$10.00</td>
-                                                        <td>Note</td>
+                                                        <td>€2.00</td>
+                                                        <td>01/01/2023</td>
+                                                        <td>05/01/2023</td>
+                                                        <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -690,44 +800,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>02</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-dark px-2"
+                                                                style="color:white">Approved</span>
                                                         <td>Henry Albert</td>
-
-                                                        <td>05-Dec-2022</td>
-                                                        <td>Saturday</td>
-                                                        <td>4</td>
-                                                        <td>$20.00</td>
-                                                        <td>Note</td>
-                                                        <td>
-                                                            <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </button>
-                                                                <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>03</td>
+                                                        <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
-
-                                                        <td>24-Jan-2023</td>
-                                                        <td>Monday</td>
-                                                        <td>1</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>€18.00</td>
+                                                        <td>06/06/2022</td>
+                                                        <td>12/06/2022</td>
+                                                        <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -736,21 +827,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>04</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-dark px-2"
+                                                                style="color:white">Approved</span>
                                                         <td>Albert Methews</td>
-
-                                                        <td>18-Jan-2023</td>
-                                                        <td>Wednesday</td>
-                                                        <td>6</td>
-                                                        <td>$30.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Henry Clark</td>
+                                                        <td>€17.00</td>
+                                                        <td>02/08/2022</td>
+                                                        <td>15/08/2022</td>
+                                                        <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -759,21 +854,25 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>05</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-dark px-2"
+                                                                style="color:white">Approved</span>
                                                         <td>Hudon Sandy</td>
-
-                                                        <td>18-Feb-2023</td>
-                                                        <td>Saturday</td>
-                                                        <td>2</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Albert Methews</td>
+                                                        <td>€87.00</td>
+                                                        <td>06/02/2022</td>
+                                                        <td>15/02/2022</td>
+                                                        <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -782,47 +881,83 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-dark px-2"
+                                                                style="color:white">Approved</span>
+                                                        <td>John Doe</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Alvin Clark</td>
+                                                        <td>€65.00</td>
+                                                        <td>03/04/2022</td>
+                                                        <td>15/04/2022</td>
+                                                        <td>25/04/2022</td>
+                                                        <td>
+                                                            <div class="dropdown chat-noti-dropdown">
+                                                                <button class="btn dropdown-toggle p-0" type="button"
+                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
 
                                                 </tbody>
+
+
+
                                             </table>
                                         </div>
                                     </div>
+                                    <!-- Tab panes  |  All Section Pane -->
                                     <div class="tab-pane" id="closed" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons"
+                                                class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
-                                                        <th>S.No</th>
-                                                        <th>Staff Name</th>
-
-                                                        <th>Date</th>
-                                                        <th>Day</th>
-                                                        <th>Hours</th>
-                                                        <th>Cost</th>
-                                                        <th>Notes</th>
-                                                        <th>Action</th>
+                                                        <th> <input type="checkbox"></th>
+                                                        <th>Quote</th>
+                                                        <th>Status</th>
+                                                        <th>Client</th>
+                                                        <th>Site</th>
+                                                        <th>Project Manager</th>
+                                                        <th>Sell Price</th>
+                                                        <th>Created Date</th>
+                                                        <th>Approved Date</th>
+                                                        <th>Expiry Date</th>
+                                                        <th>Actions</th>
                                                     </tr>
                                                 </thead>
 
-
                                                 <tbody>
-
                                                     <tr>
-                                                        <td>01</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-danger px-2" style="color:white">Close</span>
+                                                        </td>
+                                                        <td>Albert Henry</td>
+                                                        <td>Abc Site</td>
                                                         <td>John Doe</td>
-
-                                                        <td>02-Feb-2023</td>
-                                                        <td>Thursday</td>
-                                                        <td>2</td>
-                                                        <td>$10.00</td>
-                                                        <td>Note</td>
+                                                        <td>€2.00</td>
+                                                        <td>01/01/2023</td>
+                                                        <td>05/01/2023</td>
+                                                        <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -831,44 +966,24 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>02</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-danger px-2" style="color:white">Close</span>
                                                         <td>Henry Albert</td>
-
-                                                        <td>05-Dec-2022</td>
-                                                        <td>Saturday</td>
-                                                        <td>4</td>
-                                                        <td>$20.00</td>
-                                                        <td>Note</td>
-                                                        <td>
-                                                            <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </button>
-                                                                <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>03</td>
+                                                        <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
-
-                                                        <td>24-Jan-2023</td>
-                                                        <td>Monday</td>
-                                                        <td>1</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>€18.00</td>
+                                                        <td>06/06/2022</td>
+                                                        <td>12/06/2022</td>
+                                                        <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -877,21 +992,24 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>04</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-danger px-2" style="color:white">Close</span>
                                                         <td>Albert Methews</td>
-
-                                                        <td>18-Jan-2023</td>
-                                                        <td>Wednesday</td>
-                                                        <td>6</td>
-                                                        <td>$30.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Henry Clark</td>
+                                                        <td>€17.00</td>
+                                                        <td>02/08/2022</td>
+                                                        <td>15/08/2022</td>
+                                                        <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -900,21 +1018,24 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>05</td>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-danger px-2" style="color:white">Close</span>
                                                         <td>Hudon Sandy</td>
-
-                                                        <td>18-Feb-2023</td>
-                                                        <td>Saturday</td>
-                                                        <td>2</td>
-                                                        <td>$5.00</td>
-                                                        <td>Note</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Albert Methews</td>
+                                                        <td>€87.00</td>
+                                                        <td>06/02/2022</td>
+                                                        <td>15/02/2022</td>
+                                                        <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
                                                                 <button class="btn dropdown-toggle p-0" type="button"
@@ -923,32 +1044,72 @@
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" href="#">Accept</a>
-                                                                    <a class="dropdown-item" href="#">Reject</a>
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <input type="checkbox"> </td>
+                                                        <td>ABC Quote</td>
+                                                        <td><span class="bg-danger px-2" style="color:white">Close</span>
+                                                        <td>John Doe</td>
+                                                        <td>Abc Site</td>
+                                                        <td>Alvin Clark</td>
+                                                        <td>€65.00</td>
+                                                        <td>03/04/2022</td>
+                                                        <td>15/04/2022</td>
+                                                        <td>25/04/2022</td>
+                                                        <td>
+                                                            <div class="dropdown chat-noti-dropdown">
+                                                                <button class="btn dropdown-toggle p-0" type="button"
+                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Edit quote</a>
+                                                                    <a class="dropdown-item" href="#">Schedule quote</a>
+                                                                    <a class="dropdown-item" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
 
                                                 </tbody>
+
+
+
                                             </table>
                                         </div>
                                     </div>
+
+
+
                                 </div>
 
                             </div>
 
+
                         </div>
 
+                    </div>
 
-                    </div><!-- end card-body -->
-                </div>
-                <!-- end card -->
-            </div> <!-- end col -->
-        </div>
+
+                </div><!-- end card-body -->
+            </div>
+            <!-- end card -->
+        </div> <!-- end col -->
     </div>
-    <!-- container-fluid -->
+</div>
+<!-- container-fluid -->
 </div>
 <!-- End Page-content -->
 
-<?php require_once('footer.php') ?>
+
+
+
+
+<! <?php require_once('footer.php') ?>

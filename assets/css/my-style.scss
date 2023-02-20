@@ -38,6 +38,10 @@ border-color:$theme-main-color!important;
 
 .table-responsive{
     overflow-x: inherit;
+    span{
+        border-radius: 0.3rem;
+    font-size: 12px;
+    }
 }
 
 @media(max-width:767px){
@@ -48,7 +52,7 @@ border-color:$theme-main-color!important;
 
 // end
 
-.table{
+.table-responsive{
     // thead{
     //     tr{
     //         th{
@@ -60,8 +64,9 @@ border-color:$theme-main-color!important;
         tr{
             td{
                 vertical-align:middle;
-                padding-bottom: 3px;
-                padding-top: 3px;
+                padding-bottom: 4px;
+                padding-top: 4px;
+                font-size: 13px;
             }
         }
     }

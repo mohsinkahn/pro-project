@@ -16,7 +16,7 @@
                                 <h4 class="card-title mb-0">Staff</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#" class="btn btn-primary float-end">Add Staff</a>
+                                <a href="add_staff.php" class="btn btn-primary float-end">Add Staff</a>
                             </div>
                         </div>
 
