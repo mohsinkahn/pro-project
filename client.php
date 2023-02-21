@@ -27,7 +27,7 @@
                             <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap w-100">
                                 <thead>
                                     <tr>
-                                        <th>Customer</th>
+                                        <th>Client</th>
                                         <th>First Name</th>
                                         <th>Last Name</th>
                                         <th>Phone</th>
