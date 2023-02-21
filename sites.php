@@ -2,30 +2,21 @@
 
 
 <style>
-.dt-buttons {
-    display: block !important;
-}
+    .modal-content {
+        margin-top: 60px
+    }
 
-.btn-group {
-    display: none;
-}
+    .dz-message {
+        /* border : 2px solid red; */
+        width: max-content;
+        text-align: center;
+        margin-top: 50px
+    }
 
-
-.modal-content {
-    margin-top: 60px
-}
-
-.dz-message {
-    /* border : 2px solid red; */
-    width: max-content;
-    text-align: center;
-    margin-top: 50px
-}
-
-.emp-card {
-    height: 150px;
-    overflow-y: scroll;
-}
+    .emp-card {
+        height: 150px;
+        overflow-y: scroll;
+    }
 </style>
 
 
@@ -75,17 +66,14 @@
                                         <td>Equans FM.Ltd</td>
                                         <td>
                                             <div class="dropdown chat-noti-dropdown">
-                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
+                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-end">
                                                     <a class="dropdown-item" href="#">View</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                    <a data-bs-toggle="modal" data-bs-target=".map"
-                                                        class="dropdown-item" href="#">Map Site</a>
+                                                    <a data-bs-toggle="modal" data-bs-target=".map" class="dropdown-item" href="#">Map Site</a>
 
 
 
@@ -103,17 +91,14 @@
                                         <td>Seatrade CO.Ltd</td>
                                         <td>
                                             <div class="dropdown chat-noti-dropdown">
-                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
+                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-end">
                                                     <a class="dropdown-item" href="#">View</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                    <a data-bs-toggle="modal" data-bs-target=".map"
-                                                        class="dropdown-item" href="#">Map Site</a>
+                                                    <a data-bs-toggle="modal" data-bs-target=".map" class="dropdown-item" href="#">Map Site</a>
 
 
 
@@ -132,17 +117,14 @@
                                         <td>Suparco St.Ltd</td>
                                         <td>
                                             <div class="dropdown chat-noti-dropdown">
-                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
+                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-end">
                                                     <a class="dropdown-item" href="#">View</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                    <a data-bs-toggle="modal" data-bs-target=".map"
-                                                        class="dropdown-item" href="#">Map Site</a>
+                                                    <a data-bs-toggle="modal" data-bs-target=".map" class="dropdown-item" href="#">Map Site</a>
 
 
 
@@ -161,17 +143,14 @@
                                         <td>Tianse.Ltd</td>
                                         <td>
                                             <div class="dropdown chat-noti-dropdown">
-                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
+                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-end">
                                                     <a class="dropdown-item" href="#">View</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                    <a data-bs-toggle="modal" data-bs-target=".map"
-                                                        class="dropdown-item" href="#">Map Site</a>
+                                                    <a data-bs-toggle="modal" data-bs-target=".map" class="dropdown-item" href="#">Map Site</a>
 
 
 
@@ -208,89 +187,47 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-lg-4">
+                        
                         <div class="row">
                             <div class="col-lg-12">
                                 <span>
-                                    <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Assign an
-                                        Employee</h4>
+                                    <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Location</h4>
                                 </span>
                                 <div class="card emp-card">
 
-                               
-                                        <ul class="mt-2">
-                                            <li>Alex Fay</li>
-                                            <li>Cahit Tastan</li>
-                                            <li>Damian Chandler</li>
-                                            <li>Darryl Bean</li>
-                                            <li>Dave Holdway</li>
-                                            <li>John Doe</li>
-                                            <li>Andrew Methews</li>
-                                            <li>Henry Clark</li>
-                                        </ul>
-                                    
-                                </div>
-                            </div>
+                                    <ul class="mt-2">
+                                        <li>Alex Fay</li>
+                                        <li>Cahit Tastan</li>
+                                        <li>Damian Chandler</li>
 
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                            <span>
-                                        <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Quote
-                                            Assigned</h4>
-                                    </span>
-                                <div class="card emp-card">
-                                   
-                                        <ul class="mt-2">
-                                            <li>Alex Fay</li>
-                                            <li>Cahit Tastan</li>
-                                            <li>Damian Chandler</li>
+                                    </ul>
 
-                                        </ul>
-                                    
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <span>
-                                        <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">
-                                            Export</h4>
-                                    </span>
-                                    <div>
-                                        <label class="form-label">Due Date</label>
-                                        <input type="date" class="form-control" id="datepicker-datetime">
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
+                        
                     </div>
                     <div class="col-lg-8">
                         <div>
                             <div class="mapouter">
-                                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
-                                        src="https://maps.google.com/maps?q=england&t=&z=10&ie=UTF8&iwloc=&output=embed"
-                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=england&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
                                     <style>
-                                    .mapouter {
-                                        position: relative;
-                                        text-align: right;
-                                        height: 500px;
-                                        width: 100%;
-                                    }
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 500px;
+                                            width: 100%;
+                                        }
                                     </style>
                                     <style>
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        background: none !important;
-                                        height: 500px;
-                                        width: 100%;
-                                    }
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            height: 500px;
+                                            width: 100%;
+                                        }
                                     </style>
                                 </div>
                             </div>

@@ -78,7 +78,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="mb-3 mt-2">
-                                    <h4 class="mb-sm-0 font-size-18">Associate with a Customer</h4>
+                                    <h4 class="mb-sm-0 font-size-18">Associate with a Client</h4>
                                 </div>
                             </div>
                             <div class="col-lg-6">

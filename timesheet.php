@@ -69,6 +69,7 @@
                                                         <th>S.No</th>
                                                         <th>Staff Name</th>
                                                         <th>Request Type</th>
+                                                        <th>Job Name</th>
                                                         <th>Date</th>
                                                         <th>Day</th>
                                                         <th>Hours</th>
@@ -83,8 +84,11 @@
 
                                                     <tr>
                                                         <td>01</td>
-                                                        <td>John Doe</td>
+                                                        
+                                                        <td><a href="timesheet_view.php">John Doe</a></td>
+                                                          
                                                         <td>Overtime</td>
+                                                        <td>Abc job</td>
                                                         <td>02-Feb-2023</td>
                                                         <td>Thursday</td>
                                                         <td>2</td>
@@ -106,8 +110,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td>02</td>
-                                                        <td>Henry Albert</td>
+                                                        <td><a href="timesheet_view.php">John Doe</a></td>
                                                         <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>05-Dec-2022</td>
                                                         <td>Saturday</td>
                                                         <td>4</td>
@@ -129,8 +134,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td>03</td>
-                                                        <td>Harles Alvin</td>
+                                                        <td><a href="timesheet_view.php">John Doe</a></td>
                                                         <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>24-Jan-2023</td>
                                                         <td>Monday</td>
                                                         <td>1</td>
@@ -152,8 +158,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td>04</td>
-                                                        <td>Albert Methews</td>
+                                                        <td><a href="timesheet_view.php">John Doe</a></td> 
                                                         <td>Overtime</td>
+                                                        <td>Abc job</td>
                                                         <td>18-Jan-2023</td>
                                                         <td>Wednesday</td>
                                                         <td>6</td>
@@ -175,8 +182,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td>05</td>
-                                                        <td>Hudon Sandy</td>
+                                                      <td><a href="timesheet_view.php">John Doe</a></td>   
                                                         <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>18-Feb-2023</td>
                                                         <td>Saturday</td>
                                                         <td>2</td>
@@ -207,12 +215,14 @@
                                     <div class="tab-pane" id="timesheet" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered dt-responsive nowrap w-100">
+                                        <table id="datatable-buttons"
+                                                class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
                                                         <th>S.No</th>
                                                         <th>Staff Name</th>
-
+                                                        <th>Request Type</th>
+                                                        <th>Job Name</th>
                                                         <th>Date</th>
                                                         <th>Day</th>
                                                         <th>Hours</th>
@@ -227,8 +237,11 @@
 
                                                     <tr>
                                                         <td>01</td>
-                                                        <td>John Doe</td>
-
+                                                        <td>
+                                                         <a href="timesheet_view.php">John Doe</a> 
+                                                          </td>
+                                                        <td>Overtime</td>
+                                                        <td>Abc job</td>
                                                         <td>02-Feb-2023</td>
                                                         <td>Thursday</td>
                                                         <td>2</td>
@@ -251,7 +264,8 @@
                                                     <tr>
                                                         <td>02</td>
                                                         <td>Henry Albert</td>
-
+                                                        <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>05-Dec-2022</td>
                                                         <td>Saturday</td>
                                                         <td>4</td>
@@ -274,7 +288,8 @@
                                                     <tr>
                                                         <td>03</td>
                                                         <td>Harles Alvin</td>
-
+                                                        <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>24-Jan-2023</td>
                                                         <td>Monday</td>
                                                         <td>1</td>
@@ -297,7 +312,8 @@
                                                     <tr>
                                                         <td>04</td>
                                                         <td>Albert Methews</td>
-
+                                                        <td>Overtime</td>
+                                                        <td>Abc job</td>
                                                         <td>18-Jan-2023</td>
                                                         <td>Wednesday</td>
                                                         <td>6</td>
@@ -320,7 +336,8 @@
                                                     <tr>
                                                         <td>05</td>
                                                         <td>Hudon Sandy</td>
-
+                                                        <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>18-Feb-2023</td>
                                                         <td>Saturday</td>
                                                         <td>2</td>
@@ -340,6 +357,7 @@
                                                             </div>
                                                         </td>
                                                     </tr>
+
 
                                                 </tbody>
                                             </table>
@@ -349,12 +367,14 @@
                                     <div class="tab-pane" id="overtime" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered dt-responsive nowrap w-100">
+                                        <table id="datatable-buttons"
+                                                class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
                                                         <th>S.No</th>
                                                         <th>Staff Name</th>
-
+                                                        <th>Request Type</th>
+                                                        <th>Job Name</th>
                                                         <th>Date</th>
                                                         <th>Day</th>
                                                         <th>Hours</th>
@@ -369,8 +389,11 @@
 
                                                     <tr>
                                                         <td>01</td>
-                                                        <td>John Doe</td>
-
+                                                        <td>
+                                                         <a href="timesheet_view.php">John Doe</a> 
+                                                          </td>
+                                                        <td>Overtime</td>
+                                                        <td>Abc job</td>
                                                         <td>02-Feb-2023</td>
                                                         <td>Thursday</td>
                                                         <td>2</td>
@@ -393,7 +416,8 @@
                                                     <tr>
                                                         <td>02</td>
                                                         <td>Henry Albert</td>
-
+                                                        <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>05-Dec-2022</td>
                                                         <td>Saturday</td>
                                                         <td>4</td>
@@ -416,7 +440,8 @@
                                                     <tr>
                                                         <td>03</td>
                                                         <td>Harles Alvin</td>
-
+                                                        <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>24-Jan-2023</td>
                                                         <td>Monday</td>
                                                         <td>1</td>
@@ -439,7 +464,8 @@
                                                     <tr>
                                                         <td>04</td>
                                                         <td>Albert Methews</td>
-
+                                                        <td>Overtime</td>
+                                                        <td>Abc job</td>
                                                         <td>18-Jan-2023</td>
                                                         <td>Wednesday</td>
                                                         <td>6</td>
@@ -462,7 +488,8 @@
                                                     <tr>
                                                         <td>05</td>
                                                         <td>Hudon Sandy</td>
-
+                                                        <td>Timesheet</td>
+                                                        <td>Abc job</td>
                                                         <td>18-Feb-2023</td>
                                                         <td>Saturday</td>
                                                         <td>2</td>
@@ -482,6 +509,7 @@
                                                             </div>
                                                         </td>
                                                     </tr>
+
 
                                                 </tbody>
                                             </table>

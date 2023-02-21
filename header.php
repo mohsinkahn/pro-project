@@ -322,7 +322,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="assets.php">
                                     <i data-feather="archive"></i>
                                     <span data-key="t-asset">Assets</span>
                                 </a>

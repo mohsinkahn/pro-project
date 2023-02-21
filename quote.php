@@ -136,7 +136,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -163,7 +163,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -191,7 +191,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -219,7 +219,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -246,23 +246,16 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
 
                                                 </tbody>
-
-
-
                                             </table>
                                         </div>
                                     </div>
-
-
-
-
                                     <!-- Tab panes  |  All Section Pane -->
                                     <div class="tab-pane" id="timesheet" role="tabpanel">
 
@@ -308,7 +301,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -470,7 +463,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -636,7 +629,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -802,7 +795,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -968,7 +961,7 @@
                                                                 <div class="dropdown-menu dropdown-menu-end">
                                                                     <a class="dropdown-item" href="#">Edit quote</a>
                                                                     <a class="dropdown-item" href="#">Schedule quote</a>
-                                                                    <a class="dropdown-item" href="#">Map quote</a>
+                                                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".map" href="#">Map quote</a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -1108,8 +1101,108 @@
 </div>
 <!-- End Page-content -->
 
+<!-- map quote modal -->
+<div class="modal fade map" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
 
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <span>
+                                    <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Assign an
+                                        Employee</h4>
+                                </span>
+                                <div class="card emp-card">
 
+                               
+                                        <ul class="mt-2">
+                                            <li>Alex Fay</li>
+                                            <li>Cahit Tastan</li>
+                                            <li>Damian Chandler</li>
+                                            <li>Darryl Bean</li>
+                                            <li>Dave Holdway</li>
+                                            <li>John Doe</li>
+                                            <li>Andrew Methews</li>
+                                            <li>Henry Clark</li>
+                                        </ul>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                            <span>
+                                        <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Quote
+                                            Assigned</h4>
+                                    </span>
+                                <div class="card emp-card">
+                                   
+                                        <ul class="mt-2">
+                                            <li>Alex Fay</li>
+                                            <li>Cahit Tastan</li>
+                                            <li>Damian Chandler</li>
+
+                                        </ul>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <span>
+                                        <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">
+                                            Export</h4>
+                                    </span>
+                                    <div>
+                                        <label class="form-label">Due Date</label>
+                                        <input type="date" class="form-control" id="datepicker-datetime">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div>
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=england&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                                    <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 500px;
+                                        width: 100%;
+                                    }
+                                    </style>
+                                    <style>
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 100%;
+                                    }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <! <?php require_once('footer.php') ?>
