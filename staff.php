@@ -19,8 +19,6 @@
                                 <a href="add_staff.php" class="btn btn-primary float-end">Add Staff</a>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">

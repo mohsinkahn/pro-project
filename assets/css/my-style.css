@@ -3,6 +3,10 @@
   box-shadow: none;
 }
 
+.bg-main-theme {
+  background-color: #575656 !important;
+}
+
 .active > .page-link, .page-link.active {
   background-color: #575656 !important;
   border-color: #575656 !important;
@@ -49,6 +53,9 @@
   font-size: 13px;
 }
 
-body .navbar-brand-box {
+body #page-topbar {
+  z-index: 99;
+}
+body #page-topbar .navbar-brand-box {
   text-align: center;
 }/*# sourceMappingURL=my-style.css.map */

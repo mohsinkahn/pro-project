@@ -14,7 +14,7 @@
                                 <h4 class="card-title mb-0">Diary</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#" class="btn btn-primary float-end">Add Task</a>
+                                <a href="add_task.php" class="btn btn-primary float-end">Add Task</a>
                             </div>
                         </div>
 
@@ -25,95 +25,21 @@
                             <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap w-100">
                                 <thead>
                                     <tr>
-                                        <th>Sr.No</th>
-                                        <th>Jobs</th>
-                                        <th>Assign</th>
-                                        <th>Notes</th>
+                                        <th>Subject</th>
+                                        <th>Client</th>
+                                        <th>Assign to</th>
+                                        <th>Priority</th>
+                                        <th>Status</th>
+                                        <th>Job</th>
+                                        <th>Start Date</th>
+                                        <th>Due Date</th>
+                                        <th>Estimated Time</th>
                                         <th style="width:50px;">Actions</th>
                                     </tr>
                                 </thead>
 
 
-                                <tbody>
-                                    <tr>
-                                        <td>01</td>
-                                        <td>Abc Job</td>
-                                        <td>Edinburgh</td>
-                                        <td>lorem ipsum lorem ipsum...</td>
-                                        <td>
-                                            <div class="dropdown chat-noti-dropdown">
-                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                   
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>02</td>
-                                        <td>Abc Job</td>
-                                        <td>Coop</td>
-                                        <td>lorem ipsum lorem ipsum...</td>
-                                        <td>
-                                            <div class="dropdown chat-noti-dropdown">
-                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                   
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>03</td>
-                                        <td>Abc Job</td>
-                                        <td>William</td>
-                                        <td>lorem ipsum lorem ipsum...</td>
-                                        <td>
-                                            <div class="dropdown chat-noti-dropdown">
-                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                   
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>04</td>
-                                        <td>Abc Job</td>
-                                        <td>Laura</td>
-                                        <td>lorem ipsum lorem ipsum...</td>
-                                        <td>
-                                            <div class="dropdown chat-noti-dropdown">
-                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                   
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-
-
-                                </tbody>
+                            
                             </table>
                         </div>
 

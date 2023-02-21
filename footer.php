@@ -64,6 +64,8 @@
 
         <!-- drop zone -->
         <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+        <script src="assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+        <script src="assets/js/pages/form-editor.init.js"></script>
 
 
         <script src="assets/js/app.js"></script>

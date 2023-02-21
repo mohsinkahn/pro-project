@@ -11,6 +11,10 @@ $table-head-color:#fbfaff;
     background-color:$theme-main-color!important;
     box-shadow: none;
 }
+
+.bg-main-theme{
+    background-color:$theme-main-color!important;
+}
 .active>.page-link, .page-link.active{
     background-color:$theme-main-color!important;
     border-color:$theme-main-color!important; 
@@ -75,7 +79,11 @@ border-color:$theme-main-color!important;
 
 
 body{
-    .navbar-brand-box{
-        text-align: center;
+    #page-topbar{
+        z-index: 99;
+        .navbar-brand-box{
+            text-align: center;
+        }
     }
+    
 }

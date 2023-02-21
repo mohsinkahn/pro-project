@@ -1,10 +1,38 @@
 <?php require_once('header.php') ?>
 
 
+<style>
+.dt-buttons {
+    display: block !important;
+}
+
+.btn-group {
+    display: none;
+}
+
+
+.modal-content {
+    margin-top: 60px
+}
+
+.dz-message {
+    /* border : 2px solid red; */
+    width: max-content;
+    text-align: center;
+    margin-top: 50px
+}
+
+.emp-card {
+    height: 150px;
+    overflow-y: scroll;
+}
+</style>
+
+
+
+
 <div class="page-content">
     <div class="container-fluid">
-
-
         <!-- end page title -->
         <div class="row">
             <div class="col-12">
@@ -12,7 +40,7 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-md-8 col-6">
-                                <h4 class="card-title mb-0">Sites</h4>
+                                <h4 class="card-title">Sites</h4>
                             </div>
                             <div class="col-md-4 col-6">
                                 <a href="addsite.php" class="btn btn-primary float-end">Add Site</a>
@@ -32,7 +60,7 @@
                                         <th>Site Country</th>
                                         <th>Site Postcode</th>
                                         <th>Associated Customers</th>
-                                        <th style="width:50px;">Actions</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
 
@@ -56,8 +84,8 @@
                                                     <a class="dropdown-item" href="#">View</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                    <a class="dropdown-item" href="#">Map Site</a>
-
+                                                    <a data-bs-toggle="modal" data-bs-target=".map"
+                                                        class="dropdown-item" href="#">Map Site</a>
 
 
 
@@ -84,7 +112,8 @@
                                                     <a class="dropdown-item" href="#">View</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                    <a class="dropdown-item" href="#">Map Site</a>
+                                                    <a data-bs-toggle="modal" data-bs-target=".map"
+                                                        class="dropdown-item" href="#">Map Site</a>
 
 
 
@@ -112,7 +141,8 @@
                                                     <a class="dropdown-item" href="#">View</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                    <a class="dropdown-item" href="#">Map Site</a>
+                                                    <a data-bs-toggle="modal" data-bs-target=".map"
+                                                        class="dropdown-item" href="#">Map Site</a>
 
 
 
@@ -124,7 +154,7 @@
                                     </tr>
                                     <tr>
                                         <td>Husky and Co </td>
-                                        <td>Block 29 - ST 2  </td>
+                                        <td>Block 29 - ST 2 </td>
                                         <td>Itaria</td>
                                         <td>Qatar</td>
                                         <td>H20 K28</td>
@@ -140,7 +170,8 @@
                                                     <a class="dropdown-item" href="#">View</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                    <a class="dropdown-item" href="#">Map Site</a>
+                                                    <a data-bs-toggle="modal" data-bs-target=".map"
+                                                        class="dropdown-item" href="#">Map Site</a>
 
 
 
@@ -150,7 +181,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    
+
                                 </tbody>
                             </table>
                         </div>
@@ -165,5 +196,112 @@
     <!-- container-fluid -->
 </div>
 <!-- End Page-content -->
+
+
+
+<!-- Add Document Modal -->
+
+<div class="modal fade map" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <span>
+                                    <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Assign an
+                                        Employee</h4>
+                                </span>
+                                <div class="card emp-card">
+
+                               
+                                        <ul class="mt-2">
+                                            <li>Alex Fay</li>
+                                            <li>Cahit Tastan</li>
+                                            <li>Damian Chandler</li>
+                                            <li>Darryl Bean</li>
+                                            <li>Dave Holdway</li>
+                                            <li>John Doe</li>
+                                            <li>Andrew Methews</li>
+                                            <li>Henry Clark</li>
+                                        </ul>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                            <span>
+                                        <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Quote
+                                            Assigned</h4>
+                                    </span>
+                                <div class="card emp-card">
+                                   
+                                        <ul class="mt-2">
+                                            <li>Alex Fay</li>
+                                            <li>Cahit Tastan</li>
+                                            <li>Damian Chandler</li>
+
+                                        </ul>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <span>
+                                        <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">
+                                            Export</h4>
+                                    </span>
+                                    <div>
+                                        <label class="form-label">Due Date</label>
+                                        <input type="date" class="form-control" id="datepicker-datetime">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div>
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=england&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                                    <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 500px;
+                                        width: 100%;
+                                    }
+                                    </style>
+                                    <style>
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 100%;
+                                    }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <?php require_once('footer.php') ?>
