@@ -77,13 +77,15 @@ border-color:$theme-main-color!important;
      
 }
 
-
-body{
-    #page-topbar{
-        z-index: 99;
-        .navbar-brand-box{
-            text-align: center;
+html{
+    overflow-x: hidden;
+    body{
+        #page-topbar{
+            z-index: 99;
+            .navbar-brand-box{
+                text-align: center;
+            }
         }
+        
     }
-    
 }

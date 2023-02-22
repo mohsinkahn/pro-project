@@ -1,6 +1,18 @@
 <?php require_once('header.php') ?>
 
 
+<style>
+    .modal-content {
+    margin-top: 60px
+}
+.dz-message {
+    /* border : 2px solid red; */
+    width: max-content;
+    text-align: center;
+    margin-top: 50px
+}
+</style>
+
 
 <div class="page-content">
     <div class="container-fluid">
@@ -14,8 +26,8 @@
                                 <h4 class="card-title mb-0">Health & Safety Documents</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#" class="btn btn-primary float-end" style="margin-left:5px">Add Document</a>
-                                <a href="#" class="btn btn-primary float-end">Create Document</a>
+                                <a href="#"  data-bs-toggle="modal" data-bs-target=".add-document" class="btn btn-primary float-end" style="margin-left:5px">Add Document</a>
+                                <a href="#"  data-bs-toggle="modal" data-bs-target=".create-document" class="btn btn-primary float-end">Create Document</a>
                             </div>
                         </div>
 
@@ -74,5 +86,116 @@
     <!-- container-fluid -->
 </div>
 <!-- End Page-content -->
+
+
+<!-- Create Document Modal -->
+
+<div class="modal fade create-document" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Create Document</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div>
+                            <div class="mb-3">
+                                <label for="example-text-input" class="form-label">Document Title</label>
+                                <input class="form-control" type="text" id="example-text-input">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div>
+                            <div class="mb-3">
+                                <div id="ckeditor-classic"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 " style="text-align:left">
+                        <div>
+                            <div class="mt-2">
+                                <button type="submit" class="btn btn-primary w-md">Save</button>
+                                <button data-bs-dismiss="modal" aria-label="Close" type="submit"
+                                    class="btn btn-light w-md">Cancel</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Document Modal -->
+
+<div class="modal fade add-document" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Document</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div>
+                            <div class="mb-3">
+                                <label for="example-text-input" class="form-label">Document Title</label>
+                                <input class="form-control" type="text" id="example-text-input">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div>
+                            <div class="mb-3">
+
+                                <form action="#" class="dropzone">
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple="multiple">
+                                    </div>
+                                    <div class="dz-message needsclick">
+                                        <div class="mb-3">
+                                            <i class="display-4 text-muted bx bx-cloud-upload"></i>
+                                        </div>
+
+                                        <h5>Upload Documents</h5>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 " style="text-align:left">
+                        <div>
+                            <div class="mt-2">
+                                <button type="submit" class="btn btn-primary w-md">Save</button>
+                                <button data-bs-dismiss="modal" aria-label="Close" type="submit"
+                                    class="btn btn-light w-md">Cancel</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 
 <?php require_once('footer.php') ?>

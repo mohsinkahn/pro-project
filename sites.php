@@ -193,13 +193,11 @@
                                 <span>
                                     <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Location</h4>
                                 </span>
-                                <div class="card emp-card">
+                                <div class="card">
 
                                     <ul class="mt-2">
-                                        <li>Alex Fay</li>
-                                        <li>Cahit Tastan</li>
-                                        <li>Damian Chandler</li>
-
+                                        <li>Abc Location street abc 1234</li>
+                                    
                                     </ul>
 
                                 </div>

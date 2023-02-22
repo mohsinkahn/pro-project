@@ -53,9 +53,12 @@
   font-size: 13px;
 }
 
-body #page-topbar {
+html {
+  overflow-x: hidden;
+}
+html body #page-topbar {
   z-index: 99;
 }
-body #page-topbar .navbar-brand-box {
+html body #page-topbar .navbar-brand-box {
   text-align: center;
 }/*# sourceMappingURL=my-style.css.map */
