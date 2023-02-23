@@ -99,7 +99,7 @@
                             <div class="tab-pane active" id="details" role="tabpanel">
 
 
-                                <div class="card-body">
+                                <div>
                                     <div class="card border-none">
                                         <div class="card-header mt-2 align-items-center d-flex">
 
@@ -457,7 +457,7 @@
 
                             <div class="tab-pane" id="parts" role="tabpanel">
 
-                                <div class="card-body">
+                                <div>
                                     <div class="card border-none">
                                         <div class="card-header mt-2 align-items-center d-flex">
 
@@ -1140,7 +1140,7 @@
                                                         <div class="col-lg-12">
                                                             <div class="card-header">
                                                                 <div class="row">
-                                                                    <div class="col-md-8 col-lg-6">
+                                                                    <div class="col-md-10 col-12">
                                                                         <form class="app-search d-lg-block">
                                                                             <div class="position-relative">
                                                                                 <input type="text"
@@ -1151,10 +1151,10 @@
                                                                             </div>
                                                                         </form>
                                                                     </div>
-                                                                    <div class="col-md-4 col-lg-6">
-                                                                        <a href="#" data-bs-toggle="modal"
+                                                                    <div class="col-md-2 col-12">
+                                                                        <a href="#" data-bs-toggle="modal" style="margin-top:15px"
                                                                             data-bs-target=".create-group"
-                                                                            class="btn btn-primary float-end">Create
+                                                                            class="btn btn-primary w-100">Create
                                                                             Group </a>
 
                                                                     </div>
@@ -1349,9 +1349,15 @@
 
                                             <div class="row mt-4">
                                                 <div class="col-lg-4 col-md-4">
-                                                    <div class="d-flex justify-content-around px-2x">
-                                                        <h5> Available Resources</h5>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-6">
+                                                        <h5 class="mb-0"> Available Resources</h5>
+                                                        </div>
+                                                        <div class="col-md-6 col-6">
                                                         <button class="btn btn-primary">HELP ME DECIDE </button>
+                                                        </div>
+                                                        
+                                                       
 
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 ">
@@ -1482,8 +1488,8 @@
 
 
                             <div class="tab-pane" id="assets" role="tabpanel">
-                                <div class="card-body">
-                                    <div class="card border-none">
+                                <div class="card">
+                                    <div class="card-body">
                                         <div class="row">
                                             <div class="col-lg-5 col-md-5">
                                                 <div>
@@ -1517,9 +1523,9 @@
                                             </div>
                                             <div class="col-lg-2 col-md-2 mt-4">
 
-                                                <div class="mt-4">
-                                                    <button class="btn btn-primary">Add Assets </button>
-                                                </div>
+                                                
+                                                    <button style="margin-top: 28px;" class="btn btn-primary w-100">Add Assets </button>
+                                                
 
 
                                             </div>
@@ -1607,7 +1613,7 @@
 
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 mb-3">
                         <b>
                             <p class="text-dark"> Type</p>
                         </b>
@@ -1615,7 +1621,7 @@
                         </span>
                         <span> <input onclick="hideInvent()" type="radio" name="opt" id="labour" /> Labour </span>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 mb-3">
                         <b>
                             <p class="text-dark"> Options</p>
                         </b>
