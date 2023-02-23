@@ -588,7 +588,7 @@
                                                     <tr>
                                                         <th>Storage Name</th>
                                                         <th class="text-center">Default Device</th>
-                                                        <th class="right">Actions </th>
+                                                        <th class="right"> </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>

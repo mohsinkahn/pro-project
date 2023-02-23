@@ -215,7 +215,7 @@
                                     <div class="tab-pane" id="timesheet" role="tabpanel">
 
                                         <div class="table-responsive">
-                                        <table id="datatable-buttons"
+                                        <table id="datatable-buttons2"
                                                 class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
@@ -367,7 +367,7 @@
                                     <div class="tab-pane" id="overtime" role="tabpanel">
 
                                         <div class="table-responsive">
-                                        <table id="datatable-buttons"
+                                        <table id="datatable-buttons3"
                                                 class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
