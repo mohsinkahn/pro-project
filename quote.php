@@ -2,20 +2,20 @@
 
 
 <style>
-.border-none {
-    border: none !important;
-}
+    .border-none {
+        border: none !important;
+    }
 
-.modal-content {
-    margin-top: 60px
-}
+    .modal-content {
+        margin-top: 60px
+    }
 
-.dz-message {
-    /* border : 2px solid red; */
-    width: max-content;
-    text-align: center;
-    margin-top: 50px
-}
+    .dz-message {
+        /* border : 2px solid red; */
+        width: max-content;
+        text-align: center;
+        margin-top: 50px
+    }
 </style>
 
 <div class="page-content">
@@ -32,7 +32,7 @@
                                 <h4 class="card-title mb-0">Quotes</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#" class="btn btn-primary float-end" >Add Quote</a>
+                                <a href="add_quote.php" class="btn btn-primary float-end">Add Quote</a>
                             </div>
                         </div>
                     </div>
@@ -41,40 +41,34 @@
                             <div class="card-header mt-2 align-items-center d-flex">
 
                                 <div class="flex-shrink-0">
-                                    <ul class="nav justify-content-start nav-tabs-custom rounded card-header-tabs"
-                                        role="tablist">
+                                    <ul class="nav justify-content-start nav-tabs-custom rounded card-header-tabs" role="tablist">
 
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="tab" href="#all" role="tab"
-                                                id="sms">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#all" role="tab" id="sms">
 
                                                 <span class=" d-sm-block">All</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#timesheet" role="tab"
-                                                id="sms">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#timesheet" role="tab" id="sms">
 
                                                 <span class=" d-sm-block">Open</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#overtime" role="tab"
-                                                id="sms">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#overtime" role="tab" id="sms">
 
                                                 <span class=" d-sm-block">Progress</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#complete" role="tab"
-                                                id="sms">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#complete" role="tab" id="sms">
 
                                                 <span class=" d-sm-block">Complete</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#approve" role="tab"
-                                                id="sms">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#approve" role="tab" id="sms">
 
                                                 <span class=" d-sm-block">Approved</span>
                                             </a>
@@ -95,8 +89,7 @@
                                     <div class="tab-pane active" id="all" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table id="datatable-buttons"
-                                                class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
                                                         <th> <input type="checkbox"></th>
@@ -128,9 +121,7 @@
                                                         <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -144,8 +135,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-warning px-2"
-                                                                style="color:white">Progress</span></td>
+                                                        <td><span class="bg-warning px-2" style="color:white">Progress</span></td>
                                                         <td>Henry Albert</td>
                                                         <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
@@ -155,9 +145,7 @@
                                                         <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -171,8 +159,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-success px-2"
-                                                                style="color:white">Complete</span>
+                                                        <td><span class="bg-success px-2" style="color:white">Complete</span>
                                                         </td>
                                                         <td>Albert Methews</td>
                                                         <td>Abc Site</td>
@@ -183,9 +170,7 @@
                                                         <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -199,8 +184,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-dark px-2"
-                                                                style="color:white">Approved</span>
+                                                        <td><span class="bg-dark px-2" style="color:white">Approved</span>
                                                         </td>
                                                         <td>Hudon Sandy</td>
                                                         <td>Abc Site</td>
@@ -211,9 +195,7 @@
                                                         <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -238,9 +220,7 @@
                                                         <td>25/04/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -260,8 +240,7 @@
                                     <div class="tab-pane" id="timesheet" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table id="datatable-buttons"
-                                                class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons2" class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
                                                         <th> <input type="checkbox"></th>
@@ -293,9 +272,7 @@
                                                         <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -319,9 +296,7 @@
                                                         <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -345,9 +320,7 @@
                                                         <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -371,9 +344,7 @@
                                                         <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -397,9 +368,7 @@
                                                         <td>25/04/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -422,8 +391,7 @@
                                     <div class="tab-pane" id="overtime" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table id="datatable-buttons"
-                                                class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons3" class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
                                                         <th> <input type="checkbox"></th>
@@ -444,8 +412,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-warning px-2"
-                                                                style="color:white">Progress</span></td>
+                                                        <td><span class="bg-warning px-2" style="color:white">Progress</span></td>
                                                         <td>Albert Henry</td>
                                                         <td>Abc Site</td>
                                                         <td>John Doe</td>
@@ -455,9 +422,7 @@
                                                         <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -471,8 +436,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-warning px-2"
-                                                                style="color:white">Progress</span>
+                                                        <td><span class="bg-warning px-2" style="color:white">Progress</span>
                                                         <td>Henry Albert</td>
                                                         <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
@@ -482,9 +446,7 @@
                                                         <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -498,8 +460,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-warning px-2"
-                                                                style="color:white">Progress</span>
+                                                        <td><span class="bg-warning px-2" style="color:white">Progress</span>
                                                         <td>Albert Methews</td>
                                                         <td>Abc Site</td>
                                                         <td>Henry Clark</td>
@@ -509,9 +470,7 @@
                                                         <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -525,8 +484,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-warning px-2"
-                                                                style="color:white">Progress</span>
+                                                        <td><span class="bg-warning px-2" style="color:white">Progress</span>
                                                         <td>Hudon Sandy</td>
                                                         <td>Abc Site</td>
                                                         <td>Albert Methews</td>
@@ -536,9 +494,7 @@
                                                         <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -552,8 +508,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-warning px-2"
-                                                                style="color:white">Progress</span>
+                                                        <td><span class="bg-warning px-2" style="color:white">Progress</span>
                                                         <td>John Doe</td>
                                                         <td>Abc Site</td>
                                                         <td>Alvin Clark</td>
@@ -563,9 +518,7 @@
                                                         <td>25/04/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -588,8 +541,7 @@
                                     <div class="tab-pane" id="complete" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table id="datatable-buttons"
-                                                class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons4" class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
                                                         <th> <input type="checkbox"></th>
@@ -610,8 +562,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-success px-2"
-                                                                style="color:white">Complete</span></td>
+                                                        <td><span class="bg-success px-2" style="color:white">Complete</span></td>
                                                         <td>Albert Henry</td>
                                                         <td>Abc Site</td>
                                                         <td>John Doe</td>
@@ -621,9 +572,7 @@
                                                         <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -637,8 +586,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-success px-2"
-                                                                style="color:white">Complete</span>
+                                                        <td><span class="bg-success px-2" style="color:white">Complete</span>
                                                         <td>Henry Albert</td>
                                                         <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
@@ -648,9 +596,7 @@
                                                         <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -664,8 +610,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-success px-2"
-                                                                style="color:white">Complete</span>
+                                                        <td><span class="bg-success px-2" style="color:white">Complete</span>
                                                         <td>Albert Methews</td>
                                                         <td>Abc Site</td>
                                                         <td>Henry Clark</td>
@@ -675,9 +620,7 @@
                                                         <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -691,8 +634,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-success px-2"
-                                                                style="color:white">Complete</span>
+                                                        <td><span class="bg-success px-2" style="color:white">Complete</span>
                                                         <td>Hudon Sandy</td>
                                                         <td>Abc Site</td>
                                                         <td>Albert Methews</td>
@@ -702,9 +644,7 @@
                                                         <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -718,8 +658,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-success px-2"
-                                                                style="color:white">Complete</span>
+                                                        <td><span class="bg-success px-2" style="color:white">Complete</span>
                                                         <td>John Doe</td>
                                                         <td>Abc Site</td>
                                                         <td>Alvin Clark</td>
@@ -729,9 +668,7 @@
                                                         <td>25/04/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -754,8 +691,7 @@
                                     <div class="tab-pane" id="approve" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table id="datatable-buttons"
-                                                class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons5" class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
                                                         <th> <input type="checkbox"></th>
@@ -776,8 +712,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-dark px-2"
-                                                                style="color:white">Approved</span></td>
+                                                        <td><span class="bg-dark px-2" style="color:white">Approved</span></td>
                                                         <td>Albert Henry</td>
                                                         <td>Abc Site</td>
                                                         <td>John Doe</td>
@@ -787,9 +722,7 @@
                                                         <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -803,8 +736,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-dark px-2"
-                                                                style="color:white">Approved</span>
+                                                        <td><span class="bg-dark px-2" style="color:white">Approved</span>
                                                         <td>Henry Albert</td>
                                                         <td>Abc Site</td>
                                                         <td>Harles Alvin</td>
@@ -814,9 +746,7 @@
                                                         <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -830,8 +760,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-dark px-2"
-                                                                style="color:white">Approved</span>
+                                                        <td><span class="bg-dark px-2" style="color:white">Approved</span>
                                                         <td>Albert Methews</td>
                                                         <td>Abc Site</td>
                                                         <td>Henry Clark</td>
@@ -841,9 +770,7 @@
                                                         <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -857,8 +784,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-dark px-2"
-                                                                style="color:white">Approved</span>
+                                                        <td><span class="bg-dark px-2" style="color:white">Approved</span>
                                                         <td>Hudon Sandy</td>
                                                         <td>Abc Site</td>
                                                         <td>Albert Methews</td>
@@ -868,9 +794,7 @@
                                                         <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -884,8 +808,7 @@
                                                     <tr>
                                                         <td> <input type="checkbox"> </td>
                                                         <td>ABC Quote</td>
-                                                        <td><span class="bg-dark px-2"
-                                                                style="color:white">Approved</span>
+                                                        <td><span class="bg-dark px-2" style="color:white">Approved</span>
                                                         <td>John Doe</td>
                                                         <td>Abc Site</td>
                                                         <td>Alvin Clark</td>
@@ -895,9 +818,7 @@
                                                         <td>25/04/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -920,8 +841,7 @@
                                     <div class="tab-pane" id="closed" role="tabpanel">
 
                                         <div class="table-responsive">
-                                            <table id="datatable-buttons"
-                                                class="table table-bordered dt-responsive nowrap w-100">
+                                            <table id="datatable-buttons6" class="table table-bordered dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
                                                         <th> <input type="checkbox"></th>
@@ -953,9 +873,7 @@
                                                         <td>15/01/2023</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -979,9 +897,7 @@
                                                         <td>20/06/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -1005,9 +921,7 @@
                                                         <td>30/08/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -1031,9 +945,7 @@
                                                         <td>22/02/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -1057,9 +969,7 @@
                                                         <td>25/04/2022</td>
                                                         <td>
                                                             <div class="dropdown chat-noti-dropdown">
-                                                                <button class="btn dropdown-toggle p-0" type="button"
-                                                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false">
+                                                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu dropdown-menu-end">
@@ -1117,37 +1027,37 @@
                                 </span>
                                 <div class="card emp-card">
 
-                               
-                                        <ul class="mt-2">
-                                            <li>Alex Fay</li>
-                                            <li>Cahit Tastan</li>
-                                            <li>Damian Chandler</li>
-                                            <li>Darryl Bean</li>
-                                            <li>Dave Holdway</li>
-                                            <li>John Doe</li>
-                                            <li>Andrew Methews</li>
-                                            <li>Henry Clark</li>
-                                        </ul>
-                                    
+
+                                    <ul class="mt-2">
+                                        <li>Alex Fay</li>
+                                        <li>Cahit Tastan</li>
+                                        <li>Damian Chandler</li>
+                                        <li>Darryl Bean</li>
+                                        <li>Dave Holdway</li>
+                                        <li>John Doe</li>
+                                        <li>Andrew Methews</li>
+                                        <li>Henry Clark</li>
+                                    </ul>
+
                                 </div>
                             </div>
 
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                            <span>
-                                        <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Quote
-                                            Assigned</h4>
-                                    </span>
+                                <span>
+                                    <h4 style="color:white;padding:6px;border-radius:.3rem;" class="card-title bg-main-theme">Quote
+                                        Assigned</h4>
+                                </span>
                                 <div class="card emp-card">
-                                   
-                                        <ul class="mt-2">
-                                            <li>Alex Fay</li>
-                                            <li>Cahit Tastan</li>
-                                            <li>Damian Chandler</li>
 
-                                        </ul>
-                                    
+                                    <ul class="mt-2">
+                                        <li>Alex Fay</li>
+                                        <li>Cahit Tastan</li>
+                                        <li>Damian Chandler</li>
+
+                                    </ul>
+
                                 </div>
                             </div>
 
@@ -1174,24 +1084,22 @@
                     <div class="col-lg-8">
                         <div>
                             <div class="mapouter">
-                                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
-                                        src="https://maps.google.com/maps?q=england&t=&z=10&ie=UTF8&iwloc=&output=embed"
-                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=england&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
                                     <style>
-                                    .mapouter {
-                                        position: relative;
-                                        text-align: right;
-                                        height: 500px;
-                                        width: 100%;
-                                    }
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 500px;
+                                            width: 100%;
+                                        }
                                     </style>
                                     <style>
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        background: none !important;
-                                        height: 500px;
-                                        width: 100%;
-                                    }
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            height: 500px;
+                                            width: 100%;
+                                        }
                                     </style>
                                 </div>
                             </div>
@@ -1205,4 +1113,4 @@
 </div>
 
 
- <?php require_once('footer.php') ?>
+<?php require_once('footer.php') ?>
