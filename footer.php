@@ -66,7 +66,10 @@
         <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
         <script src="assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
         <script src="assets/js/pages/form-editor.init.js"></script>
-
+<!-- init js -->
+<script src="assets/js/pages/form-advanced.init.js"></script>
+<!-- choices js -->
+<script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
 
         <script src="assets/js/app.js"></script>
 

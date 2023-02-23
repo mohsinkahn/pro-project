@@ -34,7 +34,8 @@
 
         <!-- Responsive datatable examples -->
         <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" /> 
-
+<!-- choices css -->
+<link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
@@ -249,7 +250,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="jobs.php">
                                     <i data-feather="briefcase"></i>
                                     <span data-key="t-jobs">Jobs</span>
                                 </a>
@@ -292,7 +293,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="invoices.php">
                                     <i data-feather="file-text"></i>
                                     <span data-key="t-invoices">Invoices & Applications</span>
                                 </a>
@@ -328,7 +329,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="mat_temp.php">
                                     <i data-feather="file-plus"></i>
                                     <span data-key="t-material">Material & Templates</span>
                                 </a>
@@ -347,6 +348,18 @@
                                 <a href="#">
                                     <i data-feather="pie-chart"></i>
                                     <span data-key="t-report">Reports</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="orderbook.php">
+                                    <i data-feather="file-text"></i>
+                                    <span data-key="t-report">Order Book</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="orderbook.php">
+                                    <i data-feather="users"></i>
+                                    <span data-key="t-report">Forecast</span>
                                 </a>
                             </li>
                            

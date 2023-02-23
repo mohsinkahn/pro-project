@@ -34,9 +34,33 @@
                                         <th>Start Date</th>
                                         <th>Due Date</th>
                                         <th>Estimated Time</th>
-                                        <th style="width:50px;">Actions</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ABC Subject</td>
+                                        <td> <a class="text-dark" href="timesheet_view.php">  John Doe</a></td>
+                                        <td>Albert Methews</td>
+                                        <td>High</td>
+                                        <td>ABC Status</td>
+                                        <td>ABC Job</td>
+                                        <td>05/03/2023</td>
+                                        <td>05/03/2023</td>
+                                        <td>25/03/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ABC Subject</td>
+                                        <td> <a class="text-dark" href="timesheet_view.php">  Henry Clark</a></td>
+                                        <td>Alex Fay</td>
+                                        <td>Medium</td>
+                                        <td>ABC Status</td>
+                                        <td>ABC Job</td>
+                                        <td>10/01/2022</td>
+                                        <td>16/01/2022</td>
+                                        <td>20/01/2022</td>
+                                    </tr>
+                                    
+                                </tbody>
 
 
                             
