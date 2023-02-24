@@ -70,6 +70,10 @@
 <script src="assets/js/pages/form-advanced.init.js"></script>
 <!-- choices js -->
 <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+<!-- choices js -->
+
+<!-- datepicker js -->
+<script src="assets/libs/flatpickr/flatpickr.min.js"></script>
 
         <script src="assets/js/app.js"></script>
 

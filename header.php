@@ -29,13 +29,15 @@
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
           <!-- DataTables -->
-          <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Responsive datatable examples -->
         <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" /> 
-<!-- choices css -->
-<link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet" type="text/css">
+        <!-- choices css -->
+        <link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="assets/libs/flatpickr/flatpickr.min.css">
     </head>
 
     <body>
@@ -252,7 +254,7 @@
                             <li>
                                 <a href="jobs.php">
                                     <i data-feather="briefcase"></i>
-                                    <span data-key="t-jobs">Jobs</span>
+                                    <span data-key="t-jobs">Projects</span>
                                 </a>
                             </li>
                             <li>
@@ -357,7 +359,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="orderbook.php">
+                                <a href="client_forecast.php">
                                     <i data-feather="users"></i>
                                     <span data-key="t-report">Forecast</span>
                                 </a>

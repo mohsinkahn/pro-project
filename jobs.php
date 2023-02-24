@@ -29,10 +29,10 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-md-8 col-6">
-                                <h4 class="card-title mb-0">Jobs</h4>
+                                <h4 class="card-title mb-0">Projects</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="add_job.php" class="btn btn-primary float-end">Add Job</a>
+                                <a href="add_job.php" class="btn btn-primary float-end">Add Project</a>
                             </div>
                         </div>
                     </div>

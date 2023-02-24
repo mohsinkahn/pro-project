@@ -39,7 +39,7 @@ a {
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-md-8 col-6">
-                                <h4 class="card-title mb-0">Add Job</h4>
+                                <h4 class="card-title mb-0">Add Project</h4>
                             </div>
                             <div class="col-md-4 col-6" style="text-align:right">
                                 <!-- <a href="cost_center.php" class="btn btn-primary float-end" >Next</a> -->

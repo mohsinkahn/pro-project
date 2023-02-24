@@ -627,7 +627,7 @@
                             <!--Detail Tab Pane Ended-->
 
 
-                            <div class="tab-pane" id="cost" role="tabpanel" >
+                            <div class="tab-pane" id="cost" role="tabpanel" style="padding:1.25rem">
                                 <div class="row mt-4">
 
                                     <div class="col-lg-4 col-md-4">
