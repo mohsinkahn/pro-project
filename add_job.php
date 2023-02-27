@@ -103,7 +103,7 @@ a {
                                         <div>
                                             <div class="mb-3">
                                                 <label for="example-text-input" class="form-label">
-                                                    Cost Centre</label>
+                                                    Discipline</label>
                                                 <select class="form-select ">
                                                     <option selected disabled>Not Selected</option>
                                                     <option>ABC Cost Centre</option>
