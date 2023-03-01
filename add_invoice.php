@@ -39,27 +39,36 @@
                         <div class="row">
                             <div class="col-lg-12 col-md-12">
                                 <div>
-                                    <h5>Company: Kudos Services Ltd</h5>
+                                    <h5 class="head-back">Company: Kudos Services Ltd</h5>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-lg-2">
-                                <div class="mt-4">
-                                    <h6>Contact</h6>
-                                    <p>Kudos Services Ltd</p>
+                            <div class="col-lg-4">
+                                <div class="mt-4 mb-3">
+                                <label for="example-text-input" class="form-label">
+                                        Company</label>
+                                    
+                                    <select class="form-select ">
+                                        <option selected="">Select</option>
+                                        <option>Kudos Services Ltd</option>
+                                        <option>etc</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-lg-2">
-                                <div class="mt-4">
-                                    <h6>Phone</h6>
-                                    <p>01925 943616</p>
+                            <div class="col-lg-3">
+                                <div class="mt-4 mb-3">
+                                <label for="example-text-input" class="form-label">
+                                        Phone</label>
+                                  <input type="text" class="form-control"> 
                                 </div>
                             </div>
-                            <div class="col-lg-2">
-                                <div class="mt-4">
-                                    <h6>Address</h6>
-                                    <p>Renova Offices Unit Webstar<br> Court Carina Park </p>
+                            <div class="col-lg-5">
+                                <div class="mt-4 mb-3">
+                                <label for="example-text-input" class="form-label">
+                                        Address</label>
+                                    <input type="text" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -88,7 +97,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-lg-2 col-md-4">
                                 <div class="mb-3">
                                     <label for="example-text-input" class="form-label">
                                         Payment Due</label>
@@ -99,16 +108,23 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4" style="padding-top: 20px">
-                                <div class="mb-3">
+                            <div class="col-lg-2 col-md-4">
+                                <div class="mb-3" style="margin-top:40px">
                                     <p><input type="radio" name="inv" id="inv1" /> <label for="inv1"> Days from invoice
                                             date</label></p>
+                                  
+
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4">
+                                <div class="mb-3" style="margin-top:40px">
+                                  
                                     <span><input type="radio" name="inv" id="inv2" /> <label for="inv2"> Days after
                                             EOM</label></span>
 
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="mb-3">
                                     <label for="example-text-input" class="form-label">
                                         Invoice Per Item</label>
@@ -119,7 +135,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4">
+                            <div class="col-lg-3 col-md-4">
                                 <div class="mb-3">
                                     <label for="example-text-input" class="form-label">Order No
                                     </label>
@@ -160,7 +176,7 @@
                         <div class="row mt-2">
                             <div class="col-lg-12 col-md-12">
                                 <div>
-                                    <h5>Site: The St Chands Centre (Kirkby)</h5>
+                                    <h5 class="head-back">Site: The St Chands Centre (Kirkby)</h5>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +203,7 @@
                         <div class="row mt-2">
                             <div class="col-lg-12 col-md-12">
                                 <div>
-                                    <h5>Fire Alarm Service & Maintenance</h5>
+                                    <h5 class="head-back">Fire Alarm Service & Maintenance</h5>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">

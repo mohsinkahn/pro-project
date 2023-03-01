@@ -28,14 +28,12 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-md-8 col-6">
-                                <h4 class="card-title">Add Staff</h4>
+                                <h4 class="card-title mb-0">Add Staff</h4>
                             </div>
                             <!-- <div class="col-md-4 col-6">
                                 <a href="#" class="btn btn-primary float-end">Add Client</a>
                             </div> -->
                         </div>
-
-
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -55,8 +53,6 @@
                                                     <option>Admin </option>
                                                 </select>
                                             </div>
-                                           
-
                                         </div>
                                     </div>
                                     <div class="col-lg-6">

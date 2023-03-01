@@ -1,8 +1,8 @@
 <?php require_once('header.php') ?>
 
-
 <style>
-    .modal-content {
+
+.modal-content {
     margin-top: 60px
 }
 .dz-message {
@@ -26,8 +26,10 @@
                                 <h4 class="card-title mb-0">Health & Safety Documents</h4>
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#"  data-bs-toggle="modal" data-bs-target=".add-document" class="btn btn-primary float-end" style="margin-left:5px">Add Document</a>
-                                <a href="#"  data-bs-toggle="modal" data-bs-target=".create-document" class="btn btn-primary float-end">Create Document</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target=".add-document"
+                                    class="btn btn-primary float-end" style="margin-left:5px">Add Document</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target=".create-document"
+                                    class="btn btn-primary float-end">Create Document</a>
                             </div>
                         </div>
 
@@ -62,16 +64,16 @@
                                                     <a class="dropdown-item" href="#">Download</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
-                                                   
+
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
-                                    
-                                    
-                                                    
-                    
-                            
+
+
+
+
+
                                 </tbody>
                             </table>
                         </div>
@@ -86,6 +88,7 @@
     <!-- container-fluid -->
 </div>
 <!-- End Page-content -->
+
 
 
 <!-- Create Document Modal -->
@@ -117,17 +120,17 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-12 " style="text-align:left">
-                        <div>
-                            <div class="mt-2">
+                  
+                       
+                            <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary w-md">Save</button>
                                 <button data-bs-dismiss="modal" aria-label="Close" type="submit"
                                     class="btn btn-light w-md">Cancel</button>
 
                             </div>
-                        </div>
+                       
 
-                    </div>
+                  
 
                 </div>
             </div>
@@ -176,26 +179,22 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12 " style="text-align:left">
-                        <div>
-                            <div class="mt-2">
+                   
+                        
+                            <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary w-md">Save</button>
                                 <button data-bs-dismiss="modal" aria-label="Close" type="submit"
                                     class="btn btn-light w-md">Cancel</button>
 
                             </div>
-                        </div>
+                       
 
-                    </div>
+                    
 
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
 
 <?php require_once('footer.php') ?>

@@ -76,7 +76,7 @@
                         </div>
 
                         <div class="card mt-4">
-                            <div class="card-body">
+                            <div class="card-body head-back">
                             <div id="space">
                                 <div class="row align-items-center">
                                     <div class="col-lg-8 col-6">

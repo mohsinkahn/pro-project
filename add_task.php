@@ -28,7 +28,7 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-md-8 col-6">
-                                <h4 class="card-title">Add Task</h4>
+                                <h4 class="card-title mb-0">Add Task</h4>
                             </div>
                             <!-- <div class="col-md-4 col-6">
                                 <a href="#" class="btn btn-primary float-end">Add Client</a>
@@ -78,7 +78,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="mb-3 mt-2">
-                                    <h4 class="mb-sm-0 font-size-18">Associate with a Client</h4>
+                                    <h4 class="mb-sm-0 font-size-18 head-back">Associate with a Client</h4>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -129,7 +129,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="mb-3 mt-2">
-                                    <h4 class="mb-sm-0 font-size-18">Internal</h4>
+                                    <h4 class="mb-sm-0 font-size-18 head-back">Internal</h4>
                                 </div>
                             </div>
                             <div class="col-lg-4">

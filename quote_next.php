@@ -2,15 +2,16 @@
 
 
 <style>
-
-
-
 .final-sum {
     background-color: #eeeeee;
 }
 
 .right {
     text-align: right;
+}
+.nav-tabs-custom .nav-item .nav-link.active {
+    color: #5156be;
+    background: transparent;
 }
 
 .card-body {
@@ -36,11 +37,32 @@
     cursor: pointer;
 }
 
-.modal-content {
-    margin-top: 50px
+.clickable-row:hover {
+    background-color: #EFF0F1;
+    cursor: pointer;
 }
 
+
+
 #billable {
+    display: none
+}
+
+#sub_build {
+    display: none;
+}
+
+.dropdown-menu>a {
+    cursor: pointer;
+}
+
+.mr-2 {
+    margin-right: 10px;
+}
+
+#sub_take,
+#sub_take2,
+#sub_cat {
     display: none
 }
 </style>
@@ -138,14 +160,16 @@
                                                         <div class="col-lg-12 col-md-6">
 
                                                             <div class="mt-4 d-flex flex-wrap px-1  mb-3 gap-3">
-                                                                 <label><b class="text-dark">Client:</b> Jetha Liz</label>
-                                                                 <label><b class="text-dark">Site:</b> Hariington Mews</label>
-                                                                 <label><b class="text-dark">Quote:</b> € 0.00</label>
-                                                         
+                                                                <label><b class="text-dark">Client:</b> Jetha
+                                                                    Liz</label>
+                                                                <label><b class="text-dark">Site:</b> Hariington
+                                                                    Mews</label>
+                                                                <label><b class="text-dark">Quote:</b> € 0.00</label>
+
                                                             </div>
                                                         </div>
                                                         <hr />
-                                                        <div class="col-lg-4">
+                                                        <div class="col-lg-6">
                                                             <div class="card">
                                                                 <div class="card-header align-items-center d-flex">
 
@@ -168,7 +192,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-lg-5">
+                                                        <div class="col-lg-6">
                                                             <div class="card">
                                                                 <div class="card-header d-flex">
                                                                     <h4 class="card-title mb-0 flex-grow-1">Parts &
@@ -246,7 +270,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-lg-3">
+                                                        <div class="col-lg-12">
                                                             <div class="card">
                                                                 <div class="card-header align-items-center d-flex">
 
@@ -430,18 +454,20 @@
 
                                                     </div>
                                                     <div class="row mt-4">
-                            <div class="col-lg-12 " style="text-align:left">
-                                <div>
-                                    <div class="mt-4">
-                                        <button type="submit" class="btn btn-primary w-md">Save</button>
-                                        <button type="submit" class="btn btn-light w-md">Cancel</button>
+                                                        <div class="col-lg-12 " style="text-align:left">
+                                                            <div>
+                                                                <div class="mt-4">
+                                                                    <button type="submit"
+                                                                        class="btn btn-primary w-md">Save</button>
+                                                                    <button type="submit"
+                                                                        class="btn btn-light w-md">Cancel</button>
 
-                                    </div>
-                                </div>
-                               
-                            </div>
+                                                                </div>
+                                                            </div>
 
-                        </div>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
 
 
@@ -539,10 +565,23 @@
                                                                                 <input type="text" value="1" />
                                                                             </td>
                                                                             <td>
-                                                                                € 80.00 <select
-                                                                                    class="form-select form-select-sm">
-                                                                                    <option>Options</option>
-                                                                                </select>
+                                                                                € 80.00
+
+                                                                                <div class="btn-group me-1 mt-2 float-end">
+                                                                                    <button
+                                                                                        class="btn btn-light btn-sm dropdown-toggle"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="dropdown"
+                                                                                        aria-expanded="false">
+                                                                                        <i
+                                                                                            class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a
+                                                                                            class="dropdown-item">Options</a>
+                                                                                    </div>
+                                                                                </div>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -562,10 +601,22 @@
                                                                                 <input type="text" value="1" />
                                                                             </td>
                                                                             <td>
-                                                                                € 40.00 <select
-                                                                                    class="form-select form-select-sm">
-                                                                                    <option>Options</option>
-                                                                                </select>
+                                                                                € 40.00
+                                                                                <div class="btn-group me-1 mt-2 float-end">
+                                                                                    <button
+                                                                                        class="btn btn-light btn-sm dropdown-toggle"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="dropdown"
+                                                                                        aria-expanded="false">
+                                                                                        <i
+                                                                                            class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a
+                                                                                            class="dropdown-item">Options</a>
+                                                                                    </div>
+                                                                                </div>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -585,10 +636,23 @@
                                                                                 <input type="text" value="1" />
                                                                             </td>
                                                                             <td>
-                                                                                € 72.00 <select
-                                                                                    class="form-select form-select-sm">
-                                                                                    <option>Options</option>
-                                                                                </select>
+                                                                                € 72.00
+
+                                                                                <div class="btn-group me-1 mt-2 float-end">
+                                                                                    <button
+                                                                                        class="btn btn-light btn-sm dropdown-toggle"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="dropdown"
+                                                                                        aria-expanded="false">
+                                                                                        <i
+                                                                                            class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a
+                                                                                            class="dropdown-item">Options</a>
+                                                                                    </div>
+                                                                                </div>
                                                                             </td>
 
                                                                         </tr>
@@ -608,10 +672,22 @@
                                                                                 <input type="text" value="1" />
                                                                             </td>
                                                                             <td>
-                                                                                € 78.00 <select
-                                                                                    class="form-select form-select-sm">
-                                                                                    <option>Options</option>
-                                                                                </select>
+                                                                                € 78.00
+                                                                                <div class="btn-group me-1 mt-2 float-end">
+                                                                                    <button
+                                                                                        class="btn btn-light btn-sm dropdown-toggle"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="dropdown"
+                                                                                        aria-expanded="false">
+                                                                                        <i
+                                                                                            class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a
+                                                                                            class="dropdown-item">Options</a>
+                                                                                    </div>
+                                                                                </div>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -625,19 +701,24 @@
                                                             <div class="row">
                                                                 <div class="col-lg-10 col-12">
                                                                     <div class="mb-3">
-                                                                   
-                                                                       <b> <label for="choices-single-default" class="form-label ">Call Out / Service Fee</label></b>
-                                                        <select class="form-control" data-trigger="" name="choices-single-default" id="choices-single-default">
-                                                            <option value="">Not Selected</option>
-                                                            <option value="Choice 1">Choice 1</option>
-                                                            <option value="Choice 2">Choice 2</option>
-                                                            <option value="Choice 3">Choice 3</option>
-                                                        </select>
+
+                                                                        <b> <label for="choices-single-default"
+                                                                                class="form-label ">Call Out / Service
+                                                                                Fee</label></b>
+                                                                        <select class="form-control" data-trigger=""
+                                                                            name="choices-single-default"
+                                                                            id="choices-single-default">
+                                                                            <option value="">Not Selected</option>
+                                                                            <option value="Choice 1">Choice 1</option>
+                                                                            <option value="Choice 2">Choice 2</option>
+                                                                            <option value="Choice 3">Choice 3</option>
+                                                                        </select>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-2 col-12">
                                                                     <div>
-                                                                    <label for="example-text-input" style="visibility:hidden"
+                                                                        <label for="example-text-input"
+                                                                            style="visibility:hidden"
                                                                             class="form-label">Supplier
                                                                             Quote
                                                                         </label>
@@ -657,25 +738,26 @@
                                                                 </div>
                                                                 <div class="col-lg-5 col-6">
                                                                     <div class="mt-2">
-                                                                    <label for="example-text-input"
+                                                                        <label for="example-text-input"
                                                                             class="form-label">Supplier
                                                                             Quote
                                                                         </label>
-                                                                            
 
-                                                                            <select class="form-select  w-100">
-                                                                                <option selected disabled>0 Selected
-                                                                                </option>
-                                                                                <option>ABC Option</option>
-                                                                                <option>ABC Option</option>
-                                                                                <option>ABC Option</option>
 
-                                                                            </select>
+                                                                        <select class="form-select  w-100">
+                                                                            <option selected disabled>0 Selected
+                                                                            </option>
+                                                                            <option>ABC Option</option>
+                                                                            <option>ABC Option</option>
+                                                                            <option>ABC Option</option>
+
+                                                                        </select>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-2 col-12">
                                                                     <div class="mt-2">
-                                                                    <label for="example-text-input" style="visibility:hidden"
+                                                                        <label for="example-text-input"
+                                                                            style="visibility:hidden"
                                                                             class="form-label">Supplier
                                                                             Quote
                                                                         </label>
@@ -685,19 +767,23 @@
                                                                 </div>
                                                                 <div class="col-lg-10 col-12">
                                                                     <div class="mb-3 mt-2">
-                                                                        <b><label for="choices-single-default" class="form-label " > Labour</label></b>
-                                                        <select class="form-control" data-trigger="" name="choices-single-default" id="choices-single-default">
-                                                            <option value="">Not Selected</option>
-                                                            <option value="Choice 1">Choice 1</option>
-                                                            <option value="Choice 2">Choice 2</option>
-                                                            <option value="Choice 3">Choice 3</option>
-                                                        </select>
+                                                                        <b><label for="choices-single-default"
+                                                                                class="form-label "> Labour</label></b>
+                                                                        <select class="form-control" data-trigger=""
+                                                                            name="choices-single-default"
+                                                                            id="choices-single-default">
+                                                                            <option value="">Not Selected</option>
+                                                                            <option value="Choice 1">Choice 1</option>
+                                                                            <option value="Choice 2">Choice 2</option>
+                                                                            <option value="Choice 3">Choice 3</option>
+                                                                        </select>
 
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-2 col-12">
                                                                     <div class="mt-2">
-                                                                    <label for="example-text-input" style="visibility:hidden"
+                                                                        <label for="example-text-input"
+                                                                            style="visibility:hidden"
                                                                             class="form-label">Supplier
                                                                             Quote
                                                                         </label>
@@ -743,7 +829,7 @@
                                                     <div class="row mt-2  justify-content-between">
                                                         <div class="col-lg-12 col-md-12">
                                                             <div>
-                                                                <h4>Billable Summary</h4>
+                                                                <h4 class="head-back">Billable Summary</h4>
                                                             </div>
                                                         </div>
 
@@ -779,7 +865,8 @@
 
                                                         </div>
                                                         <div class="col-lg-2"></div>
-                                                        <div class="col-lg-3 mt-4 final-sum">
+                                                        <div class="col-lg-3 mt-4 ">
+                                                            <div class="final-sum p-2">
                                                             <span class="w-md d-flex justify-content-between mt-2">
                                                                 <p>Sub-Total</p>
                                                                 <p><b>€868.00</b></p>
@@ -792,6 +879,8 @@
                                                                 <p>Total</p>
                                                                 <p><b>€1041.60</b></p>
                                                             </span>
+                                                            </div>
+                                                           
 
                                                         </div>
                                                     </div>
@@ -801,487 +890,1378 @@
 
 
                                                 <div class="tab-pane" id="takeoff" role="tabpanel">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="card-header">
-                                                            
-                                                                        <form class="app-search d-lg-block">
-                                                                            <div class="position-relative">
-                                                                                <input type="text"
-                                                                                    class="form-control w-100"
-                                                                                    placeholder="Search...">
-                                                                                <button class="btn" type="button"><i
-                                                                                        class="bx bx-search-alt align-middle"></i></button>
-                                                                            </div>
-                                                                        </form>
-                                                                   
-                                                                
+                                                    <div id="take_par1">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div>
+
+                                                                    <form class="app-search d-lg-block">
+                                                                        <div class="position-relative">
+                                                                            <input type="text"
+                                                                                class="form-control w-100"
+                                                                                placeholder="Search...">
+                                                                            <button class="btn" type="button"><i
+                                                                                    class="bx bx-search-alt align-middle"></i></button>
+                                                                        </div>
+                                                                    </form>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th colspan="2">Groups</th>
+                                                                                <!-- <th></th> -->
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+
+                                                                            <tr>
+                                                                                <td> Fire Alarms </td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>Disabled Systems</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Access Control</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>CCTV</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Intruder Alarms</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Install</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Data</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Monitoring</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Kudos - Access Control Prelim</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Kudos - CCTV Prelim</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Kudos - CCTV Update</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Kudos - Intruder Alarm Prelim</td>
+                                                                                <td class="right">
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="table-responsive mt-4">
-                                                                <table id="datatable-buttons"
-                                                                    class="table table-bordered dt-responsive nowrap w-100">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th colspan="2">Groups</th>
-                                                                            <!-- <th></th> -->
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
 
+                                                    <div id="sub_take">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-8 mt-2">
+                                                                <div class="page-title-right">
+                                                                    <ol class="breadcrumb ">
 
-                                                                        <tr >
-                                                                            <td> Fire Alarms </td>
-                                                                            <td class="right">
+                                                                        <li class="breadcrumb-item"><a
+                                                                                href="javascript: void(0);"> Take Off
+                                                                                Templates</a>
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Fire Alarms
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Subgroups
+                                                                        </li>
 
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="right">
+                                                                    <button onclick=hideSubTake()
+                                                                        class="btn btn-primary  mr-2"><i
+                                                                            class="mdi mdi-arrow-left"></i> Go
+                                                                        Back</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 px-0">
+                                                                <div class="card-header" style="border-bottom:none">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 col-12">
+                                                                            <form class="app-search d-lg-block">
+                                                                                <div class="position-relative">
+                                                                                    <input type="text"
+                                                                                        class="form-control w-100"
+                                                                                        placeholder="Search...">
+                                                                                    <button class="btn" type="button"><i
+                                                                                            class="bx bx-search-alt align-middle"></i></button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <!-- <div class="col-md-2 col-12">
+                                                                        <a href="#" data-bs-toggle="modal"
+                                                                            style="margin-top:15px"
+                                                                            data-bs-target=".create-subgroup"
+                                                                            class="btn btn-primary w-100">Create
+                                                                            Subgroup
+                                                                        </a>
 
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
+                                                                    </div> -->
 
-                                                                        <tr>
-                                                                            <td>Disabled Systems</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Access Control</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>CCTV</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Intruder Alarms</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Install</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Data</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Monitoring</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Kudos - Access Control Prelim</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Kudos - CCTV Prelim</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Kudos - CCTV Update</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Kudos - Intruder Alarm Prelim</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                    </tbody>
-                                                                </table>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th colspan="2">Groups</th>
+                                                                                <!-- <th></th> -->
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+
+                                                                            <tr>
+                                                                                <td> Loop Open Protocol </td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake2()>View
+                                                                                                Subgroup</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td> Loop Open Protocol </td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake2()>View
+                                                                                                Subgroup</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td> Loop Open Protocol </td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake2()>View
+                                                                                                Subgroup</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 mt-2">
+                                                                <div class="page-title-right">
+                                                                    <ol class="breadcrumb ">
+                                                                        <li class="breadcrumb-item"><a
+                                                                                href="javascript: void(0);">Take Off
+                                                                                Templates</a>
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Fire Alarms
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Parts</li>
+
+                                                                    </ol>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+
+
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Name</th>
+                                                                                <th>Material Cost</th>
+                                                                                <th>Sell Price</th>
+
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td colspan="3">No results found</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div id="sub_take2">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-8 mt-2">
+                                                                <div class="page-title-right">
+                                                                    <ol class="breadcrumb ">
+
+                                                                        <li class="breadcrumb-item"><a
+                                                                                href="javascript: void(0);"> Take Off
+                                                                                Templates</a>
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Fire Alarms
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Subgroups
+                                                                        </li>
+
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="right">
+                                                                    <button onclick=hideSubTake2()
+                                                                        class="btn btn-primary  mr-2"><i
+                                                                            class="mdi mdi-arrow-left"></i> Go
+                                                                        Back</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 px-0">
+                                                                <div style="padding:12px">
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 col-10">
+                                                                            <form class="app-search d-lg-block">
+                                                                                <div class="position-relative">
+                                                                                    <input type="text"
+                                                                                        class="form-control w-100"
+                                                                                        placeholder="Search...">
+                                                                                    <button class="btn" type="button"><i
+                                                                                            class="bx bx-search-alt align-middle"></i></button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="col-md-2 col-12">
+                                                                            <a href="#" data-bs-toggle="modal"
+                                                                                style="margin-top:15px"
+                                                                                data-bs-target=".create-subgroup"
+                                                                                class="btn btn-primary w-100">Create
+                                                                                Subgroup
+                                                                            </a>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th colspan="2">Groups</th>
+                                                                                <!-- <th></th> -->
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+
+                                                                        
+
+                                                                            <tr>
+                                                                                <td> Loop Open Protocol </td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake2()>View
+                                                                                                Subgroup</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td> Loop Open Protocol </td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake2()>View
+                                                                                                Subgroup</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td> Loop Open Protocol </td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubTake2()>View
+                                                                                                Subgroup</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
                                                     </div>
 
                                                 </div>
+
+
+
+
 
 
 
                                                 <div class="tab-pane" id="build" role="tabpanel">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="card-header">
-                                                                <div class="row">
-                                                                    <div class="col-md-10 col-12">
-                                                                        <form class="app-search d-lg-block">
-                                                                            <div class="position-relative">
-                                                                                <input type="text"
-                                                                                    class="form-control w-100"
-                                                                                    placeholder="Search...">
-                                                                                <button class="btn" type="button"><i
-                                                                                        class="bx bx-search-alt align-middle"></i></button>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                    <div class="col-md-2 col-12">
-                                                                        <a href="#" data-bs-toggle="modal" style="margin-top:15px"
-                                                                            data-bs-target=".create-group"
-                                                                            class="btn btn-primary w-100">Create
-                                                                            Group </a>
+                                                    <div id="build_par1">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 col-12">
+                                                                            <form class="app-search d-lg-block">
+                                                                                <div class="position-relative">
+                                                                                    <input type="text"
+                                                                                        class="form-control w-100"
+                                                                                        placeholder="Search...">
+                                                                                    <button class="btn" type="button"><i
+                                                                                            class="bx bx-search-alt align-middle"></i></button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="col-md-2 col-12">
+                                                                            <a href="#" data-bs-toggle="modal"
+                                                                                style="margin-top:15px"
+                                                                                data-bs-target=".create-group"
+                                                                                class="btn btn-primary w-100">Create
+                                                                                Group </a>
+
+                                                                        </div>
 
                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th colspan="2">Group Name</th>
+                                                                                <!-- <th></th> -->
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Fire & Refuge Installtion</td>
+                                                                                <td class="right">
 
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubBuild()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>WC Alarm Installtion</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubBuild()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Access Installtion</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubBuild()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>CCTV Installation</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubBuild()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Intruder Alarms Installation</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubBuild()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Entrotec</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubBuild()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Door Holders</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubBuild()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Monitoring</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubBuild()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="table-responsive mt-4">
-                                                                <table id="datatable-buttons"
-                                                                    class="table table-bordered dt-responsive nowrap w-100">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th colspan="2">Group Name</th>
-                                                                            <!-- <th></th> -->
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Fire & Refuge Installtion</td>
-                                                                            <td class="right">
+                                                    <div id="sub_build">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-8 mt-2">
+                                                                <div class="page-title-right">
+                                                                    <ol class="breadcrumb ">
 
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
+                                                                        <li class="breadcrumb-item"><a
+                                                                                href="javascript: void(0);">Pre
+                                                                                Build</a>
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Fire & Refuge
+                                                                            Installation</li>
+                                                                        <li class="breadcrumb-item active">Subgroup</li>
 
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>WC Alarm Installtion</td>
-                                                                            <td class="right">
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="right">
+                                                                    <button onclick=hideSubBuild()
+                                                                        class="btn btn-primary  mr-2"><i
+                                                                            class="mdi mdi-arrow-left"></i> Go
+                                                                        Back</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 px-0">
+                                                                <div style="padding:12px">
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 col-12">
+                                                                            <form class="app-search d-lg-block">
+                                                                                <div class="position-relative">
+                                                                                    <input type="text"
+                                                                                        class="form-control w-100"
+                                                                                        placeholder="Search...">
+                                                                                    <button class="btn" type="button"><i
+                                                                                            class="bx bx-search-alt align-middle"></i></button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="col-md-2 col-12">
+                                                                            <a href="#" data-bs-toggle="modal"
+                                                                                style="margin-top:15px"
+                                                                                data-bs-target=".create-subgroup"
+                                                                                class="btn btn-primary w-100">Create
+                                                                                Subgroup
+                                                                            </a>
 
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
+                                                                        </div>
 
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Access Installtion</td>
-                                                                            <td class="right">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th colspan="2">Subgroup Name</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>No subgroups have been created</td>
+                                                                            </tr>
+                                                                        </tbody>
 
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 mt-2">
+                                                                <div class="page-title-right">
+                                                                    <ol class="breadcrumb ">
+                                                                        <li class="breadcrumb-item"><a
+                                                                                href="javascript: void(0);">Pre
+                                                                                Build</a>
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Fire & Refuge
+                                                                            Installation</li>
+                                                                        <li class="breadcrumb-item active">Parts</li>
 
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>CCTV Installation</td>
-                                                                            <td class="right">
+                                                                    </ol>
+                                                                </div>
 
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Intruder Alarms Installation</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Entrotec</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Door Holders</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Monitoring</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Part No</th>
+                                                                                <th>Group Name</th>
+                                                                                <th>Material Cost</th>
+                                                                                <th>Sell Price</th>
+                                                                                <th>Favourite</th>
+                                                                                <th>Add Quantity</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="clickable-row"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target=".create-sub-build">
+                                                                                <td>102</td>
+                                                                                <td>Fire & Refuge Installtion - Labour
+                                                                                    Only
+                                                                                </td>
+                                                                                <td>£0.00</td>
+                                                                                <td>£72.00</td>
+                                                                                <td></td>
+                                                                                <td> <span
+                                                                                        class="d-flex justify-content-between">
+                                                                                        <input type="number"
+                                                                                            class="form-control w-75" />
+                                                                                        <button
+                                                                                            class="btn p-2 btn-primary font-size-12">Add
+                                                                                            Item</button> </span></td>
+                                                                            </tr>
+                                                                            <tr class="clickable-row"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target=".create-sub-build">
+                                                                                <td>101</td>
+                                                                                <td>Fire & Refuge Installtion - Network
+                                                                                </td>
+                                                                                <td>£0.00</td>
+                                                                                <td>£72.00</td>
+                                                                                <td></td>
+                                                                                <td> <span
+                                                                                        class="d-flex justify-content-between">
+                                                                                        <input type="number"
+                                                                                            class="form-control w-75" />
+                                                                                        <button
+                                                                                            class="btn p-2 btn-primary font-size-12">Add
+                                                                                            Item</button> </span></td>
 
 
-                                                                    </tbody>
-                                                                </table>
+
+                                                                            </tr>
+                                                                            <tr class="clickable-row"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target=".create-sub-build">
+                                                                                <td>101</td>
+                                                                                <td>Fire & Refuge Installtion - Panel
+                                                                                </td>
+                                                                                <td>£0.00</td>
+                                                                                <td>£72.00</td>
+                                                                                <td></td>
+                                                                                <td> <span
+                                                                                        class="d-flex justify-content-between">
+                                                                                        <input type="number"
+                                                                                            class="form-control w-75" />
+                                                                                        <button
+                                                                                            class="btn p-2 btn-primary font-size-12">Add
+                                                                                            Item</button> </span></td>
+
+
+                                                                            </tr>
+
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                 </div>
+
 
                                                 <div class="tab-pane" id="cat" role="tabpanel">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="card-header">
-                                                                <div class="row">
-                                                                    <div class="col-md-10 col-12">
-                                                                        <form class="app-search d-lg-block">
-                                                                            <div class="position-relative">
-                                                                                <input type="text"
-                                                                                    class="form-control w-100"
-                                                                                    placeholder="Search...">
-                                                                                <button class="btn" type="button"><i
-                                                                                        class="bx bx-search-alt align-middle"></i></button>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                    <div class="col-md-2 col-12">
-                                                                        <a href="#" data-bs-toggle="modal" style="margin-top:15px"
-                                                                            data-bs-target=".create-group"
-                                                                            class="btn btn-primary w-100">Create
-                                                                            Group </a>
+                                                    <div id="cat_par1">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 col-12">
+                                                                            <form class="app-search d-lg-block">
+                                                                                <div class="position-relative">
+                                                                                    <input type="text"
+                                                                                        class="form-control w-100"
+                                                                                        placeholder="Search...">
+                                                                                    <button class="btn" type="button"><i
+                                                                                            class="bx bx-search-alt align-middle"></i></button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="col-md-2 col-12">
+                                                                            <a href="#" data-bs-toggle="modal"
+                                                                                style="margin-top:15px"
+                                                                                data-bs-target=".create-group"
+                                                                                class="btn btn-primary w-100">Create
+                                                                                Group </a>
+
+                                                                        </div>
 
                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th colspan="2">Group Name</th>
+                                                                                <!-- <th></th> -->
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>ADI - February 2023</td>
+                                                                                <td class="right">
 
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubCat()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Baldwin Boxall - February 2023</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubCat()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Gent - January 2023</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubCat()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>Kentec - February 2023</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubCat()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Orisec - January 2023</td>
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubCat()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>Cameo - Loop Wired - February 2023
+                                                                                </td>
+
+                                                                                <td class="right">
+
+                                                                                    <div class="btn-group me-1 mt-2">
+                                                                                        <button
+                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            type="button"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            aria-expanded="false">
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
+
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu">
+                                                                                            <a class="dropdown-item"
+                                                                                                onclick=viewSubCat()>View
+                                                                                                Group</a>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </td>
+                                                                            </tr>
+
+
+                                                                        </tbody>
+                                                                    </table>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="table-responsive mt-4">
-                                                                <table id="datatable-buttons"
-                                                                    class="table table-bordered dt-responsive nowrap w-100">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th colspan="2">Group Name</th>
-                                                                            <!-- <th></th> -->
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>ADI - February 2023</td>
-                                                                            <td class="right">
+                                                    <div  id="sub_cat" >
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-8 mt-2">
+                                                                <div class="page-title-right">
+                                                                    <ol class="breadcrumb ">
 
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
+                                                                        <li class="breadcrumb-item"><a
+                                                                                href="javascript: void(0);">
+                                                                                Catalogue</a>
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">ADI-February
+                                                                            2023
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">Subgroups
+                                                                        </li>
 
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Baldwin Boxall - February 2023</td>
-                                                                            <td class="right">
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="right">
+                                                                    <button onclick=hideSubCat()
+                                                                        class="btn btn-primary  mr-2"><i
+                                                                            class="mdi mdi-arrow-left"></i> Go
+                                                                        Back</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 px-0">
+                                                                <div style="padding:12px">
+                                                                    <div class="row">
+                                                                        <div class="col-md-10 col-12">
+                                                                            <form class="app-search d-lg-block">
+                                                                                <div class="position-relative">
+                                                                                    <input type="text"
+                                                                                        class="form-control w-100"
+                                                                                        placeholder="Search...">
+                                                                                    <button class="btn" type="button"><i
+                                                                                            class="bx bx-search-alt align-middle"></i></button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="col-md-2 col-12">
+                                                                            <a href="#" data-bs-toggle="modal"
+                                                                                style="margin-top:15px"
+                                                                                data-bs-target=".create-subgroup"
+                                                                                class="btn btn-primary w-100">Create
+                                                                                Subgroup
+                                                                            </a>
 
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
+                                                                        </div>
 
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Gent - January 2023</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Mayflex - February 2023</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Kentec - February 2023</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Orisec - January 2023</td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Cameo - Radial Wired - February 2023
-                                                                            </td>
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Cameo - Loop Wired - February 2023</td>
-
-                                                                            <td class="right">
-
-                                                                                <select
-                                                                                    class="form-select form-select-sm w-25 float-end">
-                                                                                    <option>Options</option>
-                                                                                    <option>View Group</option>
-
-                                                                                </select>
-                                                                            </td>
-                                                                        </tr>
-
-
-                                                                    </tbody>
-                                                                </table>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th colspan="2">Subgroup Name</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>No subgroups have been created</td>
+                                                                            </tr>
+                                                                        </tbody>
 
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 mt-2">
+                                                                <div class="page-title-right">
+                                                                    <ol class="breadcrumb ">
+                                                                        <li class="breadcrumb-item"><a
+                                                                                href="javascript: void(0);">Catalogue</a>
+                                                                        </li>
+                                                                        <li class="breadcrumb-item active">ADI -
+                                                                            February
+                                                                            2023</li>
+                                                                        <li class="breadcrumb-item active">Parts</li>
+
+                                                                    </ol>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="table-responsive mt-4">
+                                                                    <table id="datatable-buttons"
+                                                                        class="table table-bordered dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Part No</th>
+                                                                                <th>Group Name</th>
+                                                                                <th>Stock</th>
+                                                                                <th>Sell Price</th>
+                                                                                <th>Favourite</th>
+                                                                                <th>Add Quantity</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Acess Com D/Rate</td>
+                                                                                <td>Commissioning ADI Access Day Rate
+                                                                                </td>
+                                                                                <td class="text-danger">0(0)</td>
+                                                                                <td>£560.53</td>
+                                                                                <td></td>
+                                                                                <td> <span
+                                                                                        class="d-flex justify-content-between">
+                                                                                        <input type="number"
+                                                                                            class="form-control w-75" />
+                                                                                        <button
+                                                                                            class="btn p-2 btn-primary font-size-12">Add
+                                                                                            Item</button> </span></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Acess Com H/Rate</td>
+                                                                                <td>Commissioning ADI Access Hourly Rate
+                                                                                </td>
+                                                                                <td class="text-danger">0(0)</td>
+                                                                                <td>£72.53</td>
+                                                                                <td></td>
+                                                                                <td> <span
+                                                                                        class="d-flex justify-content-between">
+                                                                                        <input type="number"
+                                                                                            class="form-control w-75" />
+                                                                                        <button
+                                                                                            class="btn p-2 btn-primary font-size-12">Add
+                                                                                            Item</button> </span></td>
+                                                                            </tr>
+
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
+
+
+
 
                                                 <div class="tab-pane" id="items" role="tabpanel">
                                                     <div class="row">
@@ -1348,16 +2328,16 @@
 
 
                                             <div class="row mt-4">
-                                                <div class="col-lg-4 col-md-4">
+                                                <div class="col-lg-12 col-md-4">
                                                     <div class="row">
                                                         <div class="col-md-6 col-6">
-                                                        <h5 class="mb-0"> Available Resources</h5>
+                                                            <h5 class="mb-0"> Available Resources</h5>
                                                         </div>
                                                         <div class="col-md-6 col-6">
-                                                        <button class="btn btn-primary">HELP ME DECIDE </button>
+                                                            <button class="btn btn-primary float-end">HELP ME DECIDE </button>
                                                         </div>
-                                                        
-                                                       
+
+
 
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 ">
@@ -1408,7 +2388,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-8 col-md-8">
+                                                <div class="col-lg-12 col-md-8">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-6">
                                                             <div class="d-flex justify-content-between px-2">
@@ -1523,27 +2503,28 @@
                                             </div>
                                             <div class="col-lg-2 col-md-2 mt-4">
 
-                                                
-                                                    <button style="margin-top: 28px;" class="btn btn-primary w-100">Add Assets </button>
-                                                
+
+                                                <button style="margin-top: 28px;" class="btn btn-primary w-100">Add
+                                                    Assets </button>
+
 
 
                                             </div>
 
                                         </div>
                                         <div class="row mt-4">
-                            <div class="col-lg-12 " style="text-align:left">
-                                <div>
-                                    <div class="mt-4">
-                                        <button type="submit" class="btn btn-primary w-md">Save</button>
-                                        <button type="submit" class="btn btn-light w-md">Cancel</button>
+                                            <div class="col-lg-12 " style="text-align:left">
+                                                <div>
+                                                    <div class="mt-4">
+                                                        <button type="submit" class="btn btn-primary w-md">Save</button>
+                                                        <button type="submit" class="btn btn-light w-md">Cancel</button>
 
-                                    </div>
-                                </div>
-                               
-                            </div>
+                                                    </div>
+                                                </div>
 
-                        </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1569,7 +2550,7 @@
 <div class="modal fade create-group" id="group" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header   border-bottom-0">
+            <div class="modal-header">
                 <h5 class="modal-title" id="modal-title">Create Group</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div>
@@ -1580,20 +2561,52 @@
                             <label class="form-label">Group Name</label>
                             <input class="form-control" placeholder="Insert Group Name" type="text" name="title"
                                 id="event-title" required="" value="">
+                        </div>
+                    </div>
+
+                </div>
+                
+                    <div class="modal-footer text-end">
+                    <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>    
+                        <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
+                       
+                    </div>
+                
+
+            </div>
+        </div> <!-- end modal-content-->
+    </div> <!-- end modal dialog-->
+</div>
+<!-- end modal-->
+
+<!-- Create Sub Group Event MODAL -->
+<div class="modal fade create-subgroup" id="group" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">Create Subgroup</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <label class="form-label">Subgroup Name</label>
+                            <input class="form-control" placeholder="Insert Subgroup Name" type="text" name="title"
+                                id="event-title" required="" value="">
 
                         </div>
                     </div>
 
                 </div>
-                <div class="row mt-2">
-                    <div class="col-6">
-
+               
+                    
+                    <div class="modal-footer text-end">
+                    <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>
+                        <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
+                       
                     </div>
-                    <div class="col-6 text-end">
-                        <button type="button" class="btn btn-light me-1" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="btn-save-event">Save</button>
-                    </div>
-                </div>
+               
 
             </div>
         </div> <!-- end modal-content-->
@@ -1605,7 +2618,7 @@
 <div class="modal fade create-one-off" id="group" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-            <div class="modal-header  border-bottom-0">
+            <div class="modal-header">
                 <h4 class="modal-title" id="modal-title">Details</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div>
@@ -1710,7 +2723,6 @@
                                             (ex VAT)</small></label>
                                     <input class="form-control" type="number" id="example-text-input">
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
@@ -1795,20 +2807,486 @@
                     </div>
                 </div>
 
-                <div class="row mt-2">
-
-                    <div class="col-lg-12 col-md-12 text-end">
-                        <button type="button" class="btn btn-light me-1" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="btn-save-event">Save</button>
+                <div class="modal-footer text-end">
+                    <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>    
+                        <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
+                       
                     </div>
-                </div>
 
             </div>
         </div>
 
     </div> <!-- end modal-content-->
 </div> <!-- end modal dialog-->
+<!-- end modal-->
+
+
+
+
+
+
+<!-- Create Sub Build MODAL -->
+<div class="modal fade create-sub-build" id="group" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pre Builds</a></li>
+                        <li class="breadcrumb-item active">Fire & Refuge Installation</li>
+                        <li class="breadcrumb-item active">Fire & Refuge Installation - 2 core inc materials</li>
+
+                    </ol>
+                </div>
+                <!-- <h4 class="modal-title" id="modal-title">Details</h4> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+
+
+            <div class="modal-body">
+                <div class="card-header">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 col-12">
+
+                            <div>
+                                <ul class="nav justify-content-start nav-tabs-custom rounded card-header-tabs"
+                                    role="tablist">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#modal-details" role="tab"
+                                            id="sms">
+                                            <span class=" d-sm-block">Details</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#modal-build" role="tab"
+                                            id="sms">
+                                            <span class=" d-sm-block">Build</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#modal-attach" role="tab"
+                                            id="sms">
+                                            <span class=" d-sm-block">Attachments </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content campaign">
+                        <!-- Tab panes  |  All Section Pane -->
+                        <div class="tab-pane active" id="modal-details" role="tabpanel">
+                            <div class="row">
+                                <!-- <div class="modal-header">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="mt-4 mb-3">
+                                            <h4 class="head-back">Details</h4>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="mb-3">
+                                        <div class="mt-4 d-flex flex-wrap px-1  mb-3 gap-5">
+                                            <label><b class="text-dark">Name:</b> Fire & Refuge Installation - 2 core
+                                                inc materials</label>
+                                            <label><b class="text-dark">Part No:</b> 100 </label>
+                                            <label><b class="text-dark">Attribute:</b> <input type="checkbox" />
+                                                Favourite</label>
+                                        </div>
+                                        <div class="mt-4 d-flex flex-wrap px-1  mb-3 gap-5">
+                                            <label><b class="text-dark">Description:</b> No description added</label>
+                                            <label><b class="text-dark">Notes:</b> No notes added </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="mt-4 mb-3">
+                                        <h4 class="head-back">Pricing</h4>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <label><b class="text-dark">Type : </b> Standard Price </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label><b class="text-dark">Material </b> </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2">
+                                                    <label>Cost</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+                                                    <small> <label><input type="checkbox" /> Based on
+                                                            Build</label></small>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="input-group">
+                                                        <div class="input-group-text">£</div>
+                                                        <input type="number" value="15" disabled class="form-control"
+                                                            id="specificSizeInputGroupUsername" placeholder="Username">
+                                                        <div class="input-group-text">Cost</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label><b class="text-dark"> </b> </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 align-item-center">
+                                                    <label>Sell</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+                                                    <small> <label><input type="checkbox" /> Based on
+                                                            Build</label></small>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="input-group">
+
+                                                        <input type="number" value="48" disabled class="form-control"
+                                                            id="specificSizeInputGroupUsername" placeholder="Username">
+                                                        <div class="input-group-text">%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label><b class="text-dark"> </b> </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 align-item-center">
+                                                    <label></label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+                                                    <small> <label><input type="checkbox" /> Based on
+                                                            Build</label></small>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="input-group">
+
+                                                        <div class="input-group-text">£</div>
+                                                        <input type="number" value="22.20" disabled class="form-control"
+                                                            id="specificSizeInputGroupUsername" placeholder="Username">
+                                                        <div class="input-group-text">Sell</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label><b class="text-dark">Labour </b> </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2">
+                                                    <label>Time</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+                                                    <small> <label><input type="checkbox" /> Based on
+                                                            Build</label></small>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="input-group">
+
+                                                        <input type="number" value="85" disabled class="form-control"
+                                                            id="specificSizeInputGroupUsername" placeholder="Username">
+                                                        <div class="input-group-text">Mins</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label><b class="text-dark"> </b> </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2">
+                                                    <label>Rates</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+                                                    <small> <label><input type="checkbox" /> Based on
+                                                            Build</label></small>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="input-group">
+
+                                                        <div class="input-group-text">£</div>
+                                                        <input type="number" value="50.25" disabled class="form-control"
+                                                            id="specificSizeInputGroupUsername" placeholder="Username">
+                                                        <div class="input-group-text">Cost</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label><b class="text-dark"> </b> </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2">
+                                                    <label></label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="input-group">
+
+                                                        <div class="input-group-text">£</div>
+                                                        <input type="number" value="35.48" disabled class="form-control"
+                                                            id="specificSizeInputGroupUsername" placeholder="Username">
+                                                        <div class="input-group-text">/hr</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label><b class="text-dark"> </b> </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2">
+                                                    <label></label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="input-group">
+
+
+                                                        <input type="number" value="48" disabled class="form-control"
+                                                            id="specificSizeInputGroupUsername" placeholder="Username">
+                                                        <div class="input-group-text">%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label><b class="text-dark"> </b> </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2">
+                                                    <label></label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="input-group">
+
+                                                        <div class="input-group-text">£</div>
+                                                        <input type="number" value="74.29" disabled class="form-control"
+                                                            id="specificSizeInputGroupUsername" placeholder="Username">
+                                                        <div class="input-group-text">Sell</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-lg-6 col-md-6">
+
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Sales Tax Code </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label>Use default part tax code </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <label><b class="text-dark">Breakdown </b> </label>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Sales Tax Code </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label class="text-danger">£ 15.00 </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Labour </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label class="text-danger">£ 50.25 </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Material Markup </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label class="text-success">£ 7.20 </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Labour Markup </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label class="text-success">£ 24.21 </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Profit </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label class="text-success"> 31.00 </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Margin </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label class="text-success">£ 32.43% </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Total Ex VAT </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="input-group">
+                                                                <div class="input-group-text">£</div>
+                                                                <input type="number" value="96.57" disabled
+                                                                    class="form-control"
+                                                                    id="specificSizeInputGroupUsername"
+                                                                    placeholder="Username">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <label><b class="text-dark">Total Inc VAT </b> </label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="input-group">
+                                                                <div class="input-group-text">£</div>
+                                                                <input type="number" value="115.88" disabled
+                                                                    class="form-control"
+                                                                    id="specificSizeInputGroupUsername"
+                                                                    placeholder="Username">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-6 col-md-6"></div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div id="column_chart_datalabel" data-colors='["#FF0000"]'
+                                                        class="apex-charts" dir="ltr"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="modal-build" role="tabpanel">
+                            <div class="row">
+                                <div class="modal-header">
+
+                                    <!-- <div class="col-lg-12 col-md-12">
+                                        <div class="mt-4 mb-3">
+                                            <h4 class="head-back">Build</h4>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table  dt-responsive nowrap w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th>Qty</th>
+                                                    <th>Part No</th>
+                                                    <th>Name</th>
+                                                    <th>Cost Time <small>(Hours)</small></th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="5">Pre-Build has no build items</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="modal-attach" role="tabpanel">
+                            <!-- <div class="row">
+                                <div class="modal-header">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="mt-4 mb-3">
+                                            <h4 class="head-back">Attachment</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table  dt-responsive nowrap w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Added By</th>
+                                                    <th>Date</th>
+                                                    <th>Size</th>
+                                                    <th>Default Image</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="5">No attachment to view</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>
+                <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </div>
+</div>
+
+</div> <!-- end modal-content-->
+</div> <!-- end modal dialog-->
 <!-- end modal-->
 
 
@@ -1829,6 +3307,105 @@ function getChartColorsArray(e) {
     });
 }
 
+var columnDatalabelColors = getChartColorsArray("#column_chart_datalabel"),
+    options = {
+        chart: {
+            height: 350,
+            type: "bar",
+            toolbar: {
+                show: !1
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 10,
+                dataLabels: {
+                    position: "top"
+                }
+            }
+        },
+        dataLabels: {
+            enabled: !0,
+            formatter: function(e) {
+                return e + "%";
+            },
+            offsetY: -22,
+            style: {
+                fontSize: "12px",
+                colors: ["#304758"]
+            },
+        },
+        series: [{
+            name: "Profit",
+            data: [0, 2.5, 0],
+        }, ],
+        colors: columnDatalabelColors,
+        grid: {
+            borderColor: "#f1f1f1"
+        },
+        xaxis: {
+            categories: [
+                "Jan",
+                "Feb",
+                "March"
+
+            ],
+            position: "top",
+            labels: {
+                offsetY: -18
+            },
+            axisBorder: {
+                show: !1
+            },
+            axisTicks: {
+                show: !1
+            },
+            crosshairs: {
+                fill: {
+                    type: "gradient",
+                    gradient: {
+                        colorFrom: "#D8E3F0",
+                        colorTo: "#BED1E6",
+                        stops: [0, 100],
+                        opacityFrom: 0.4,
+                        opacityTo: 0.5,
+                    },
+                },
+            },
+            tooltip: {
+                enabled: !0,
+                offsetY: -35
+            },
+        },
+        yaxis: {
+            axisBorder: {
+                show: !1
+            },
+            axisTicks: {
+                show: !1
+            },
+            labels: {
+                show: !1,
+                formatter: function(e) {
+                    return e + "%";
+                },
+            },
+        },
+        title: {
+
+            floating: !0,
+            offsetY: 330,
+            align: "center",
+            style: {
+                color: "#444",
+                fontWeight: "500"
+            },
+        },
+    };
+(chart = new ApexCharts(
+    document.querySelector("#column_chart_datalabel"),
+    options
+)).render();
 
 var pieColors = getChartColorsArray("#pie_chart"),
     options = {
@@ -1883,9 +3460,52 @@ const toggleDiv = () => {
 }
 
 
-$(".clickable-row").click(function() {
-    window.location.href  = "index.php";
-});
+const viewSubBuild = () => {
+    $('#build_par1').hide()
+    $('#sub_build').show()
+}
+
+
+const hideSubBuild = () => {
+    $('#build_par1').show()
+    $('#sub_build').hide()
+}
+
+const viewSubCat = () => {
+    $('#cat_par1').hide()
+    $('#sub_cat').show()
+}
+
+const hideSubCat = () => {
+    $('#cat_par1').show()
+    $('#sub_cat').hide()
+}
+
+const viewSubTake = () => {
+    $('#take_par1').hide()
+    $('#sub_take').show()
+}
+
+const hideSubTake = () => {
+    $('#take_par1').show()
+    $('#sub_take').hide()
+}
+
+
+
+const viewSubTake2 = () => {
+    $('#sub_take').hide()
+    $('#sub_take2').show()
+}
+
+const hideSubTake2 = () => {
+    $('#sub_take').show()
+    $('#sub_take2').hide()
+}
+
+// $(".clickable-row").click(function() {
+//     window.location.href = "index.php";
+// });
 </script>
 
 

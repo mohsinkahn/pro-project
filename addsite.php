@@ -20,7 +20,7 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-md-8 col-6">
-                                <h4 class="card-title">Add Site</h4>
+                                <h4 class="card-title mb-0">Add Site</h4>
                             </div>
                             <!-- <div class="col-md-4 col-6">
                                 <a href="#" class="btn btn-primary float-end">Add Client</a>

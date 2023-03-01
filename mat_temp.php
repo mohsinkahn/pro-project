@@ -745,7 +745,7 @@
 <div class="modal fade create-group" id="group" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header  border-bottom-0">
+            <div class="modal-header">
                 <h5 class="modal-title" id="modal-title">Create Group</h5>
 
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
@@ -764,15 +764,14 @@
                     </div>
 
                 </div>
-                <div class="row mt-2">
-                    <div class="col-6">
-
+                
+                   
+                    <div class="modal-footer text-end">
+                    <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>
+                        <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
+                       
                     </div>
-                    <div class="col-6 text-end">
-                        <button type="button" class="btn btn-light me-1" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="btn-save-event">Save</button>
-                    </div>
-                </div>
+                
 
             </div>
         </div> <!-- end modal-content-->
@@ -784,7 +783,7 @@
 <div class="modal fade create-storage" id="group" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header  border-bottom-0">
+            <div class="modal-header">
                 <h5 class="modal-title" id="modal-title">Create Storage Device</h5>
 
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
@@ -810,11 +809,13 @@
                             <span> <input type="checkbox"> </input> Default Device </span>
                         </div>
                     </div>
-                    <div class="col-6 text-end">
-                        <button type="button" class="btn btn-light me-1" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="btn-save-event">Save</button>
-                    </div>
+                    
                 </div>
+                <div class="modal-footer text-end">
+                <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>
+                        <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
+                       
+                    </div>
 
             </div>
         </div> <!-- end modal-content-->

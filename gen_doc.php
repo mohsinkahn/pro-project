@@ -120,17 +120,17 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-12 " style="text-align:left">
-                        <div>
-                            <div class="mt-2">
+                  
+                       
+                            <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary w-md">Save</button>
                                 <button data-bs-dismiss="modal" aria-label="Close" type="submit"
                                     class="btn btn-light w-md">Cancel</button>
 
                             </div>
-                        </div>
+                       
 
-                    </div>
+                  
 
                 </div>
             </div>
@@ -179,17 +179,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12 " style="text-align:left">
-                        <div>
-                            <div class="mt-2">
+                   
+                        
+                            <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary w-md">Save</button>
                                 <button data-bs-dismiss="modal" aria-label="Close" type="submit"
                                     class="btn btn-light w-md">Cancel</button>
 
                             </div>
-                        </div>
+                       
 
-                    </div>
+                    
 
                 </div>
             </div>

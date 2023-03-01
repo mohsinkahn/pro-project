@@ -39,7 +39,7 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div>
@@ -92,7 +92,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="row">
                                     <div class="col-lg-12">
 
@@ -133,7 +133,7 @@
 
                             <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <h4 class="mb-sm-0 font-size-18">Contact Details</h4>
+                                    <h4 class="mb-sm-0 font-size-18 head-back">Contact Details</h4>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -204,7 +204,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <h4 class="mb-sm-0 font-size-18">Account Contacts for Billing</h4>
+                                    <h4 class="mb-sm-0 font-size-18 head-back">Account Contacts for Billing</h4>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
