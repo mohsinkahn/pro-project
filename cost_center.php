@@ -33,7 +33,7 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-md-8 col-6">
-                                <h4 class="card-title">Primary Cost Center</h4>
+                                <h4 class="card-title">Primary Discipline</h4>
                             </div>
                             <!-- <div class="col-md-4 col-6">
                                 <a href="#" class="btn btn-primary float-end" >Next</a>
@@ -101,7 +101,7 @@
                         <div id="invoice-data" class="row mt-4 align-items-center">
                         <div class="col-lg-4">
                             <div class="mb-3">
-                                <label class="form-label">Cost Centre</label>
+                                <label class="form-label">Discipline</label>
                                 <select class="form-select">
                                     <option selected disabled>0 Selected</option>
                                     <option>ABC Center</option>
@@ -114,7 +114,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="mb-3">
-                                <label class="form-label">Cost Centre Name <small><em>Optional</em></small></label>
+                                <label class="form-label">Discipline Name <small><em>Optional</em></small></label>
                                 <input class="form-control" type="text" id="cost">
                             </div>
                         </div>

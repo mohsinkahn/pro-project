@@ -1699,11 +1699,26 @@ body[data-layout=horizontal][data-topbar=colored] .header-item {
 }
 
 .head-back{
-    background: #fbfaff;
+    background: #ecebf3;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 7px;
     border-radius: 0.2rem;
+}
+.create-new{
+    background-color: #575656 !important;
+    color: white!important;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 0.3rem
+}
+.head-back2{
+    background: #ecebf3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 7px;
+    border-radius: 0.2rem;
+    margin: 2px;
 }
 .modal .modal-body{
     padding-bottom: 0;

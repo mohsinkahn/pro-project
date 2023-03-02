@@ -58,7 +58,7 @@ a {
 
 
                                             <label for="choices-single-default" class="form-label ">Client</label>
-                                            <a class="text-primary" style="float:right" href="addclient.php">Create
+                                            <a class="create-new" style="float:right" href="addclient.php">Create
                                                 New</a>
                                             <select class="form-control" data-trigger="" name="choices-single-default"
                                                 id="choices-single-default" placeholder="Select Name">
@@ -75,7 +75,7 @@ a {
                                         <div>
                                             <div class="mb-3">
                                                 <label for="choices-single-default" class="form-label ">Site</label>
-                                                <a class="text-primary" style="float:right"
+                                                <a class="create-new" style="float:right"
                                                     href="addsite.php">Create New</a>
                                                 <select class="form-control" data-trigger=""
                                                     name="choices-single-default" id="choices-single-default"

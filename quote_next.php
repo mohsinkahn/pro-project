@@ -6,8 +6,16 @@
     background-color: #eeeeee;
 }
 
+.bx-dots-vertical-rounded {
+    color: #eeeeee;
+}
+
 .right {
     text-align: right;
+}
+
+#spline_area{
+    /* background-color:red; */
 }
 .nav-tabs-custom .nav-item .nav-link.active {
     color: #5156be;
@@ -42,8 +50,6 @@
     cursor: pointer;
 }
 
-
-
 #billable {
     display: none
 }
@@ -65,12 +71,35 @@
 #sub_cat {
     display: none
 }
+
+.nav-tabs-custom .nav-item .nav-link.active {
+    background-color: #575656 !important;
+    color: #fbfaff !important;
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+
+
+}
+
+.nav-tabs-custom .nav-item {
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.nav-tabs-custom.card-header-tabs .nav-link {
+    padding: 0.25rem 1rem;
+}
+
+.first-nav:hover {
+    color: black;
+    font-weight: bold
+}
 </style>
 
 <div class="page-content">
     <div class="container-fluid">
-
-
         <!-- end page title -->
         <div class="row">
             <div class="col-12">
@@ -78,31 +107,31 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-md-12 col-12">
-                                <!-- <div class="card-header mt-2 align-items-center d-flex"> -->
-
                                 <div>
-                                    <ul class="nav justify-content-start nav-tabs-custom rounded card-header-tabs"
-                                        role="tablist">
+                                    
+                                    <ul class="nav justify-content-center nav-tabs-custom rounded card-header-tabs" role="tablist" aria-orientation="vertical">
 
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="tab" href="#details" role="tab"
-                                                id="sms">
+                                            <a class="nav-link active first-nav" data-bs-toggle="tab" href="#details"
+                                                role="tab" id="sms">
                                                 <span class=" d-sm-block">Details</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#parts" role="tab" id="sms">
+                                            <a class="nav-link first-nav" data-bs-toggle="tab" href="#parts" role="tab"
+                                                id="sms">
                                                 <span class=" d-sm-block">Parts & Labour</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#schedule" role="tab"
-                                                id="sms">
+                                            <a class="nav-link first-nav" data-bs-toggle="tab" href="#schedule"
+                                                role="tab" id="sms">
                                                 <span class=" d-sm-block">Schedule </span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#assets" role="tab" id="sms">
+                                            <a class="nav-link first-nav" data-bs-toggle="tab" href="#assets" role="tab"
+                                                id="sms">
                                                 <span class=" d-sm-block">Client Assets </span>
                                             </a>
                                         </li>
@@ -119,14 +148,11 @@
                     <div class="card-body border-none">
                         <div class="tab-content  campaign">
                             <div class="tab-pane active" id="details" role="tabpanel">
-
-
                                 <div>
                                     <div class="card border-none">
-                                        <div class="card-header mt-2 align-items-center d-flex">
-
+                                        <div class="card-header mt-2 align-items-center">
                                             <div>
-                                                <ul class="nav justify-content-start nav-tabs-custom rounded card-header-tabs"
+                                                <ul class="nav justify-content-center nav-tabs-custom rounded card-header-tabs"
                                                     role="tablist">
 
                                                     <li class="nav-item">
@@ -157,42 +183,25 @@
                                                 <!-- Tab pane  |  Summary | Detail Pane -->
                                                 <div class="tab-pane active" id="summary" role="tabpanel">
                                                     <div class="row">
-                                                        <div class="col-lg-12 col-md-6">
+                                                        <div class="col-lg-6 col-md-6">
 
                                                             <div class="mt-4 d-flex flex-wrap px-1  mb-3 gap-3">
                                                                 <label><b class="text-dark">Client:</b> Jetha
                                                                     Liz</label>
                                                                 <label><b class="text-dark">Site:</b> Hariington
                                                                     Mews</label>
-                                                                <label><b class="text-dark">Quote:</b> € 0.00</label>
+                                                                <label><b class="text-dark">Quote:</b> £ 0.00</label>
 
                                                             </div>
                                                         </div>
                                                         <hr />
-                                                        <div class="col-lg-6">
-                                                            <div class="card">
-                                                                <div class="card-header align-items-center d-flex">
 
-                                                                    <h4 class="card-title mb-0 flex-grow-1">Estimate
-                                                                        Breakdown</h4>
+                                                        
 
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <div class="row">
-                                                                        <div class="col-lg-12">
-                                                                            <div class="mt-4 px-2">
-                                                                                <div id="pie_chart"
-                                                                                    data-colors='["#5156be", "#fd625e", "#4ba6ef", "#ffbf53"]'
-                                                                                    class="apex-charts" dir="ltr"></div>
+                                                        
+                                                      
 
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-6">
+                                                        <div class="col-lg-6 col-md-6">
                                                             <div class="card">
                                                                 <div class="card-header d-flex">
                                                                     <h4 class="card-title mb-0 flex-grow-1">Parts &
@@ -232,7 +241,7 @@
                                                                     <div class="col-lg-12">
                                                                         <div class="table-responsive">
                                                                             <table
-                                                                                class="table  dt-responsive nowrap w-100">
+                                                                                class="table parts-table dt-responsive nowrap w-100">
                                                                                 <thead>
                                                                                     <tr>
                                                                                         <th>Item</th>
@@ -243,24 +252,24 @@
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td>Material Cost</td>
-                                                                                        <td class="right">€0.00</td>
+                                                                                        <td class="right">£ 0.00</td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td>Material Markup</td>
-                                                                                        <td class="right">€0.00</td>
+                                                                                        <td class="right">£ 0.00</td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td>Resources Cost</td>
-                                                                                        <td class="right">€0.00</td>
+                                                                                        <td class="right">£ 0.00</td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td>Resources Markup</td>
-                                                                                        <td class="right">€0.00</td>
+                                                                                        <td class="right">£ 0.00</td>
                                                                                     </tr>
 
                                                                                     <tr>
                                                                                         <td>VAT</td>
-                                                                                        <td class="right">€0.00</td>
+                                                                                        <td class="right">£ 0.00</td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
@@ -270,7 +279,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-lg-12">
+                                                        <div class="col-lg-6 col-md-6">
                                                             <div class="card">
                                                                 <div class="card-header align-items-center d-flex">
 
@@ -320,6 +329,33 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
+
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="card">
+                                                                <div class="card-header align-items-center d-flex">
+
+                                                                    <h4 class="card-title mb-0 flex-grow-1">Estimate
+                                                                        Breakdown</h4>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <div class="mt-4 px-2">
+                                                                                <div id="spline_area"
+                                                                                    data-colors='["#5156be", "#2ab57d"]'
+                                                                                    class="apex-charts" dir="ltr"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        
+                                                      
+
                                                     </div>
 
                                                 </div>
@@ -329,7 +365,7 @@
                                                         <div class="col-lg-3">
                                                             <div>
                                                                 <div class="mb-3">
-                                                                    <label class="form-label">Cost Centre</label>
+                                                                    <label class="form-label">Discipline</label>
                                                                     <select class="form-select">
                                                                         <option>Fire Alarm Install</option>
                                                                         <option>CCTV Install</option>
@@ -342,7 +378,7 @@
                                                             <div>
                                                                 <div class="mb-3">
                                                                     <label for="example-text-input"
-                                                                        class="form-label">Cost Centre Name</label>
+                                                                        class="form-label">Discipline Name</label>
                                                                     <input class="form-control" type="text"
                                                                         id="example-text-input">
                                                                 </div>
@@ -412,7 +448,7 @@
                                                                 <div>
 
                                                                     <label for="example-text-input"
-                                                                        class="form-label">Default Cost Centre
+                                                                        class="form-label">Default Discipline
                                                                         Account</label>
 
                                                                     <p class="text-dark mt-2">Sales</p>
@@ -429,17 +465,17 @@
                                                                 <div>
 
                                                                     <label for="example-text-input" class="form-label">
-                                                                        Cost Centre Type
+                                                                    Discipline Type
                                                                     </label>
                                                                     <br />
 
 
                                                                     <p class="text-dark mt-2" id="charge"><input
                                                                             type="radio" name="charge"
-                                                                            for="charge">Chargeable</p>
+                                                                            for="charge" style="margin-right:3px;">Chargeable</p>
                                                                     <p class="text-dark mt-2" id="option"><input
                                                                             type="radio" name="charge"
-                                                                            for="option">Optional <input
+                                                                            for="option" style="margin-right:3px;">Optional <input
                                                                             type="checkbox"> Itemise parts regardless of
                                                                         print type (pdf & doc only)</p>
 
@@ -460,7 +496,7 @@
                                                                     <button type="submit"
                                                                         class="btn btn-primary w-md">Save</button>
                                                                     <button type="submit"
-                                                                        class="btn btn-light w-md">Cancel</button>
+                                                                        class="btn btn-dark w-md">Cancel</button>
 
                                                                 </div>
                                                             </div>
@@ -485,10 +521,10 @@
 
                                 <div>
                                     <div class="card border-none">
-                                        <div class="card-header mt-2 align-items-center d-flex">
+                                        <div class="card-header mt-2 align-items-center ">
 
                                             <div>
-                                                <ul class="nav justify-content-start nav-tabs-custom rounded card-header-tabs"
+                                                <ul class="nav justify-content-center nav-tabs-custom rounded card-header-tabs"
                                                     role="tablist">
 
                                                     <li class="nav-item">
@@ -558,18 +594,20 @@
                                                                                     <option>Fit Time</option>
                                                                                 </select>
                                                                             </td>
-                                                                            <td>€ 50 <input type="checkbox"> </td>
+                                                                            <td>£ 50 <input type="checkbox"> </td>
                                                                             <td> 60 % </td>
-                                                                            <td>€ 80.00 <input type="checkbox"> </td>
+                                                                            <td>£ 80.00 <input type="checkbox"> </td>
                                                                             <td>
-                                                                                <input type="text" value="1" />
+                                                                                <input type="text" value="1"
+                                                                                    class="form-control" />
                                                                             </td>
                                                                             <td>
-                                                                                € 80.00
+                                                                                £ 80.00
 
-                                                                                <div class="btn-group me-1 mt-2 float-end">
+                                                                                <div
+                                                                                    class="btn-group me-1 mt-2 float-end">
                                                                                     <button
-                                                                                        class="btn btn-light btn-sm dropdown-toggle"
+                                                                                        class="btn btn-dark btn-sm dropdown-toggle"
                                                                                         type="button"
                                                                                         data-bs-toggle="dropdown"
                                                                                         aria-expanded="false">
@@ -594,17 +632,19 @@
                                                                                     <option>Fit Time</option>
                                                                                 </select>
                                                                             </td>
-                                                                            <td>€ 65 <input type="checkbox"> </td>
+                                                                            <td>£ 65 <input type="checkbox"> </td>
                                                                             <td> 60 % </td>
-                                                                            <td>€ 40.00 <input type="checkbox"> </td>
+                                                                            <td>£ 40.00 <input type="checkbox"> </td>
                                                                             <td>
-                                                                                <input type="text" value="1" />
+                                                                                <input type="text" value="1"
+                                                                                    class="form-control" />
                                                                             </td>
                                                                             <td>
-                                                                                € 40.00
-                                                                                <div class="btn-group me-1 mt-2 float-end">
+                                                                                £ 40.00
+                                                                                <div
+                                                                                    class="btn-group me-1 mt-2 float-end">
                                                                                     <button
-                                                                                        class="btn btn-light btn-sm dropdown-toggle"
+                                                                                        class="btn btn-dark btn-sm dropdown-toggle"
                                                                                         type="button"
                                                                                         data-bs-toggle="dropdown"
                                                                                         aria-expanded="false">
@@ -629,18 +669,20 @@
                                                                                     <option>Fit Time</option>
                                                                                 </select>
                                                                             </td>
-                                                                            <td>€ 45 <input type="checkbox"> </td>
+                                                                            <td>£ 45 <input type="checkbox"> </td>
                                                                             <td> 60 % </td>
-                                                                            <td>€ 72.00 <input type="checkbox"> </td>
+                                                                            <td>£ 72.00 <input type="checkbox"> </td>
                                                                             <td>
-                                                                                <input type="text" value="1" />
+                                                                                <input type="text" value="1"
+                                                                                    class="form-control" />
                                                                             </td>
                                                                             <td>
-                                                                                € 72.00
+                                                                                £ 72.00
 
-                                                                                <div class="btn-group me-1 mt-2 float-end">
+                                                                                <div
+                                                                                    class="btn-group me-1 mt-2 float-end">
                                                                                     <button
-                                                                                        class="btn btn-light btn-sm dropdown-toggle"
+                                                                                        class="btn btn-dark btn-sm dropdown-toggle"
                                                                                         type="button"
                                                                                         data-bs-toggle="dropdown"
                                                                                         aria-expanded="false">
@@ -665,17 +707,19 @@
                                                                                     <option>Fit Time</option>
                                                                                 </select>
                                                                             </td>
-                                                                            <td>€ 30 <input type="checkbox"> </td>
+                                                                            <td>£ 30 <input type="checkbox"> </td>
                                                                             <td> 66.5 % </td>
-                                                                            <td>€ 78.00 <input type="checkbox"> </td>
+                                                                            <td>£ 78.00 <input type="checkbox"> </td>
                                                                             <td>
-                                                                                <input type="text" value="1" />
+                                                                                <input type="text" value="1"
+                                                                                    class="form-control w-md" />
                                                                             </td>
                                                                             <td>
-                                                                                € 78.00
-                                                                                <div class="btn-group me-1 mt-2 float-end">
+                                                                                £ 78.00
+                                                                                <div
+                                                                                    class="btn-group me-1 mt-2 float-end">
                                                                                     <button
-                                                                                        class="btn btn-light btn-sm dropdown-toggle"
+                                                                                        class="btn btn-dark btn-sm dropdown-toggle"
                                                                                         type="button"
                                                                                         data-bs-toggle="dropdown"
                                                                                         aria-expanded="false">
@@ -833,54 +877,54 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-lg-3 mt-4">
+                                                        <div class="col-lg-4 mt-4" style="padding-left:10px">
                                                             <span class="w-md d-flex justify-content-between mt-2">
                                                                 <p>Material Cost</p>
-                                                                <p><b>€35.00</b></p>
+                                                                <p><b>£ 35.00</b></p>
                                                             </span>
                                                             <span class="w-md d-flex justify-content-between mt-2">
                                                                 <p>Labour Cost</p>
-                                                                <p><b>€495.00</b></p>
+                                                                <p><b>£ 495.00</b></p>
                                                             </span>
                                                             <span class="w-md d-flex justify-content-between">
                                                                 <p>Plan & Equipment Cost</p>
-                                                                <p><b>€0.00</b></p>
+                                                                <p><b>£ 0.00</b></p>
                                                             </span>
 
                                                         </div>
-                                                        <div class="col-lg-1"></div>
+                                                        <!-- <div class="col-lg-1"></div> -->
                                                         <div class="col-lg-3 mt-4">
                                                             <span class="w-md d-flex justify-content-between mt-2">
                                                                 <p>Material Markup</p>
-                                                                <p><b>€21.00</b></p>
+                                                                <p><b>£ 21.00</b></p>
                                                             </span>
                                                             <span class="w-md d-flex justify-content-between mt-2">
                                                                 <p>Labour Markup</p>
-                                                                <p><b>€317.00</b></p>
+                                                                <p><b>£ 317.00</b></p>
                                                             </span>
                                                             <span class="w-md d-flex justify-content-between">
                                                                 <p>Plan & Equipment Markup</p>
-                                                                <p><b>€0.00</b></p>
+                                                                <p><b>£ 0.00</b></p>
                                                             </span>
 
                                                         </div>
-                                                        <div class="col-lg-2"></div>
+                                                        <!-- <div class="col-lg-2"></div> -->
                                                         <div class="col-lg-3 mt-4 ">
                                                             <div class="final-sum p-2">
-                                                            <span class="w-md d-flex justify-content-between mt-2">
-                                                                <p>Sub-Total</p>
-                                                                <p><b>€868.00</b></p>
-                                                            </span>
-                                                            <span class="w-md d-flex justify-content-between mt-2 ">
-                                                                <p>VAT</p>
-                                                                <p><b>€173.60</b></p>
-                                                            </span>
-                                                            <span class="w-md d-flex justify-content-between ">
-                                                                <p>Total</p>
-                                                                <p><b>€1041.60</b></p>
-                                                            </span>
+                                                                <span class="w-md d-flex justify-content-between mt-2">
+                                                                    <p>Sub-Total</p>
+                                                                    <p><b>£ 868.00</b></p>
+                                                                </span>
+                                                                <span class="w-md d-flex justify-content-between mt-2 ">
+                                                                    <p>VAT</p>
+                                                                    <p><b>£ 173.60</b></p>
+                                                                </span>
+                                                                <span class="w-md d-flex justify-content-between ">
+                                                                    <p>Total</p>
+                                                                    <p><b>£ 1041.60</b></p>
+                                                                </span>
                                                             </div>
-                                                           
+
 
                                                         </div>
                                                     </div>
@@ -928,7 +972,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -950,7 +994,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -971,7 +1015,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -992,7 +1036,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1013,7 +1057,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1034,7 +1078,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1055,7 +1099,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1076,7 +1120,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1097,7 +1141,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1118,7 +1162,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1139,7 +1183,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1160,7 +1204,7 @@
                                                                                 <td class="right">
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1258,11 +1302,12 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
-                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
                                                                                         </button>
                                                                                         <div class="dropdown-menu">
                                                                                             <a class="dropdown-item"
@@ -1279,11 +1324,12 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
-                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
                                                                                         </button>
                                                                                         <div class="dropdown-menu">
                                                                                             <a class="dropdown-item"
@@ -1300,11 +1346,12 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
-                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
                                                                                         </button>
                                                                                         <div class="dropdown-menu">
                                                                                             <a class="dropdown-item"
@@ -1431,7 +1478,7 @@
                                                                         <tbody>
 
 
-                                                                        
+
 
                                                                             <tr>
                                                                                 <td> Loop Open Protocol </td>
@@ -1439,11 +1486,12 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
-                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
                                                                                         </button>
                                                                                         <div class="dropdown-menu">
                                                                                             <a class="dropdown-item"
@@ -1460,11 +1508,12 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
-                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
                                                                                         </button>
                                                                                         <div class="dropdown-menu">
                                                                                             <a class="dropdown-item"
@@ -1481,11 +1530,12 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
-                                                                                            <i  class="bx bx-dots-vertical-rounded"></i>
+                                                                                            <i
+                                                                                                class="bx bx-dots-vertical-rounded"></i>
                                                                                         </button>
                                                                                         <div class="dropdown-menu">
                                                                                             <a class="dropdown-item"
@@ -1564,7 +1614,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1587,7 +1637,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1610,7 +1660,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1633,7 +1683,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1656,7 +1706,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1679,7 +1729,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1702,7 +1752,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1725,7 +1775,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1969,7 +2019,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -1992,7 +2042,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -2015,7 +2065,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -2039,7 +2089,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -2062,7 +2112,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -2088,7 +2138,7 @@
 
                                                                                     <div class="btn-group me-1 mt-2">
                                                                                         <button
-                                                                                            class="btn btn-light btn-sm dropdown-toggle"
+                                                                                            class="btn btn-dark btn-sm dropdown-toggle"
                                                                                             type="button"
                                                                                             data-bs-toggle="dropdown"
                                                                                             aria-expanded="false">
@@ -2113,7 +2163,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div  id="sub_cat" >
+                                                    <div id="sub_cat">
                                                         <div class="row">
                                                             <div class="col-lg-8 col-md-8 mt-2">
                                                                 <div class="page-title-right">
@@ -2329,16 +2379,19 @@
 
                                             <div class="row mt-4">
                                                 <div class="col-lg-12 col-md-4">
-                                                    <div class="row">
+                                                    <div class="head-back2" >
+                                                    <div class="row" style="align-items:center;">
                                                         <div class="col-md-6 col-6">
                                                             <h5 class="mb-0"> Available Resources</h5>
                                                         </div>
                                                         <div class="col-md-6 col-6">
-                                                            <button class="btn btn-primary float-end">HELP ME DECIDE </button>
+                                                            <button class="btn btn-primary float-end" style="margin-right:7px;">HELP ME DECIDE
+                                                            </button>
                                                         </div>
 
 
 
+                                                    </div>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 ">
                                                         <div class="table-responsive">
@@ -2391,9 +2444,9 @@
                                                 <div class="col-lg-12 col-md-8">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-md-6">
-                                                            <div class="d-flex justify-content-between px-2">
+                                                            <div class="d-flex justify-content-between px-2 head-back2">
                                                                 <h5> Scheduled Resources</h5>
-                                                                <p> <b>Act Time: </b>0.00<b> Est Time: </b>0.00 </p>
+                                                                <p class="mb-0"> <b>Act Time: </b>0.00<b> Est Time: </b>0.00 </p>
 
                                                             </div>
                                                         </div>
@@ -2517,7 +2570,7 @@
                                                 <div>
                                                     <div class="mt-4">
                                                         <button type="submit" class="btn btn-primary w-md">Save</button>
-                                                        <button type="submit" class="btn btn-light w-md">Cancel</button>
+                                                        <button type="submit" class="btn btn-dark w-md">Cancel</button>
 
                                                     </div>
                                                 </div>
@@ -2565,13 +2618,13 @@
                     </div>
 
                 </div>
-                
-                    <div class="modal-footer text-end">
-                    <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>    
-                        <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
-                       
-                    </div>
-                
+
+                <div class="modal-footer text-end">
+                    <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>
+                    <button type="button" class="btn btn-dark me-1 w-md" data-bs-dismiss="modal">Close</button>
+
+                </div>
+
 
             </div>
         </div> <!-- end modal-content-->
@@ -2599,14 +2652,14 @@
                     </div>
 
                 </div>
-               
-                    
-                    <div class="modal-footer text-end">
+
+
+                <div class="modal-footer text-end">
                     <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>
-                        <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
-                       
-                    </div>
-               
+                    <button type="button" class="btn btn-dark me-1 w-md" data-bs-dismiss="modal">Close</button>
+
+                </div>
+
 
             </div>
         </div> <!-- end modal-content-->
@@ -2808,10 +2861,10 @@
                 </div>
 
                 <div class="modal-footer text-end">
-                    <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>    
-                        <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
-                       
-                    </div>
+                    <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>
+                    <button type="button" class="btn btn-dark me-1 w-md" data-bs-dismiss="modal">Close</button>
+
+                </div>
 
             </div>
         </div>
@@ -3274,7 +3327,7 @@
 
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary w-md" id="btn-save-event">Save</button>
-                <button type="button" class="btn btn-light me-1 w-md" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark me-1 w-md" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -3293,22 +3346,92 @@
 
 
 
+
+
+
+
 <?php require_once('footer.php') ?>
 
-
 <script>
-function getChartColorsArray(e) {
-    e = $(e).attr("data-colors");
-    return (e = JSON.parse(e)).map(function(e) {
-        e = e.replace(" ", "");
-        if (-1 == e.indexOf("--")) return e;
-        e = getComputedStyle(document.documentElement).getPropertyValue(e);
-        return e || void 0;
+function getChartColorsArray(r) {
+  r = $(r).attr("data-colors");
+  let validJson = false;
+  try{
+    validJson = true;
+    r = JSON.parse(e);
+  }catch{
+    validJson = false
+  }
+  if(validJson){
+    return (r = JSON.parse(r)).map(function (r) {
+      r = r.replace(" ", "");
+      if (-1 == r.indexOf("--")) return r;
+      r = getComputedStyle(document.documentElement).getPropertyValue(r);
+      return r || void 0;
     });
+  }else{
+    return false;
+  }
+
 }
 
-var columnDatalabelColors = getChartColorsArray("#column_chart_datalabel"),
+
+
+var splneAreaColors = getChartColorsArray("#spline_area");
+if(splneAreaColors){
     options = {
+        chart: {
+            height: 350,
+            type: "area",
+            toolbar: {
+                show: !1
+            }
+        },
+        dataLabels: {
+            enabled: !1
+        },
+        stroke: {
+            curve: "smooth",
+            width: 3
+        },
+        series: [{
+                name: "Profit",
+                data: [34, 60, 28, 52, 42, 109, 100]
+            }
+        ],
+        colors: splneAreaColors,
+        xaxis: {
+            categories: [
+                "Jan",
+                "Feb",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+            ],
+        },
+        grid: {
+            borderColor: "#f1f1f1"
+        },
+        tooltip: {
+            x: {
+                format: "dd/MM/yy HH:mm"
+            }
+        },
+    };
+(chart = new ApexCharts(
+    document.querySelector("#spline_area"),
+    options
+)).render();
+
+}
+
+
+
+var columnDatalabelColors = getChartColorsArray("#column_chart_datalabel");
+if(columnDatalabelColors){
+    var    options = {
         chart: {
             height: 350,
             type: "bar",
@@ -3406,9 +3529,12 @@ var columnDatalabelColors = getChartColorsArray("#column_chart_datalabel"),
     document.querySelector("#column_chart_datalabel"),
     options
 )).render();
+}
 
-var pieColors = getChartColorsArray("#pie_chart"),
-    options = {
+
+var pieColors = getChartColorsArray("#pie_chart");
+if(pieColors){
+    var    options = {
         chart: {
             height: 320,
             type: "pie"
@@ -3441,6 +3567,8 @@ var pieColors = getChartColorsArray("#pie_chart"),
     document.querySelector("#pie_chart"),
     options
 )).render();
+}
+
 
 
 
@@ -3503,11 +3631,12 @@ const hideSubTake2 = () => {
     $('#sub_take2').hide()
 }
 
+
+
 // $(".clickable-row").click(function() {
 //     window.location.href = "index.php";
 // });
 </script>
-
 
 
 <!--

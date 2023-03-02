@@ -60,7 +60,7 @@
                                 <!-- <div class="card-header mt-2 align-items-center d-flex"> -->
 
                                 <div class="flex-shrink-0">
-                                    <ul class="nav justify-content-start nav-tabs-custom rounded card-header-tabs"
+                                    <ul class="nav justify-content-center nav-tabs-custom rounded card-header-tabs"
                                         role="tablist">
 
                                         <li class="nav-item">
