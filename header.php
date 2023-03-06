@@ -38,6 +38,7 @@
         <link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="assets/libs/flatpickr/flatpickr.min.css">
+        <script src="assets/libs/jquery/jquery.min.js"></script>
     </head>
 
     <body>

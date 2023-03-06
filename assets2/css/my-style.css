@@ -1,0 +1,82 @@
+.btn-primary {
+  background-color: #575656 !important;
+  box-shadow: none;
+}
+
+.bg-main-theme {
+  background-color: #575656 !important;
+}
+
+.active > .page-link, .page-link.active {
+  background-color: #575656 !important;
+  border-color: #575656 !important;
+}
+
+.buttons-collection {
+  visibility: hidden;
+}
+
+.buttons-copy {
+  background-color: #575656 !important;
+  border-color: #575656 !important;
+}
+
+.buttons-excel {
+  background-color: #575656 !important;
+  border-color: #575656 !important;
+}
+
+.buttons-pdf {
+  border-top-right-radius: 0.2rem !important;
+  border-bottom-right-radius: 0.2rem !important;
+  background-color: #575656 !important;
+  border-color: #575656 !important;
+}
+
+.nav-tabs-custom .nav-item .nav-link.active {
+  background-color: #575656 !important;
+  color: #fbfaff !important;
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.nav-tabs-custom .nav-item {
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.nav-tabs-custom.card-header-tabs .nav-link {
+  padding: 0.25rem 1rem;
+}
+
+.table-responsive {
+  overflow-x: inherit;
+}
+.table-responsive span {
+  border-radius: 0.3rem;
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+.table-responsive tbody tr td {
+  vertical-align: middle;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-size: 13px;
+}
+
+html {
+  overflow-x: hidden;
+}
+html body #page-topbar {
+  z-index: 99;
+}
+html body #page-topbar .navbar-brand-box {
+  text-align: center;
+}/*# sourceMappingURL=my-style.css.map */

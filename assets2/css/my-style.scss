@@ -1,0 +1,109 @@
+
+// variables color
+$theme-main-color:#575656;
+$table-head-color:#fbfaff;
+
+
+
+// custom classes
+
+.btn-primary{
+    background-color:$theme-main-color!important;
+    box-shadow: none;
+}
+
+.bg-main-theme{
+    background-color:$theme-main-color!important;
+}
+.active>.page-link, .page-link.active{
+    background-color:$theme-main-color!important;
+    border-color:$theme-main-color!important; 
+}
+.buttons-collection{
+visibility: hidden;
+}
+
+.buttons-copy{
+    background-color:$theme-main-color!important;
+    border-color:$theme-main-color!important;
+}
+
+.buttons-excel{
+    background-color:$theme-main-color!important;
+    border-color:$theme-main-color!important;
+}
+
+.buttons-pdf{
+border-top-right-radius: .2rem!important;
+border-bottom-right-radius: .2rem!important;
+background-color:$theme-main-color!important;
+border-color:$theme-main-color!important;
+}
+
+.nav-tabs-custom .nav-item .nav-link.active {
+    background-color: #575656 !important;
+    color: #fbfaff !important;
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+
+
+}
+.nav-tabs-custom .nav-item{
+    padding-top:5px;
+    padding-bottom:1px;
+}
+.nav-tabs-custom.card-header-tabs .nav-link{
+    padding: 0.25rem 1rem;
+}
+
+.table-responsive{
+    overflow-x: inherit;
+    span{
+        border-radius: 0.3rem;
+    font-size: 12px;
+    }
+}
+
+@media(max-width:767px){
+    .table-responsive{
+        overflow-x: auto;
+    }   
+}
+
+// end
+
+.table-responsive{
+    // thead{
+    //     tr{
+    //         th{
+    //             background-color:$table-head-color;
+    //         }
+    //     }
+    // }
+    tbody{
+        tr{
+            td{
+                vertical-align:middle;
+                padding-bottom: 4px;
+                padding-top: 4px;
+                font-size: 13px;
+            }
+        }
+    }
+     
+}
+
+html{
+    overflow-x: hidden;
+    body{
+        #page-topbar{
+            z-index: 99;
+            .navbar-brand-box{
+                text-align: center;
+            }
+        }
+        
+    }
+}
