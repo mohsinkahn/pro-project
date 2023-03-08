@@ -4,11 +4,67 @@
 
 
 
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+<script>
+    
+    window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", //"light1", "dark1", "dark2"
+	title:{
+		text: "Sales Analysis - June 2016"
+	},
+	data: [{
+		type: "funnel",
+		indexLabelPlacement: "inside",
+		indexLabelFontColor: "white",
+		toolTipContent: "<b>{label}</b>: {y} <b>({percentage}%)</b>",
+		indexLabel: "{label} ({percentage}%)",
+		dataPoints: [
+			{ y: 1400, label: "Leads" },
+			{ y: 1212, label: "Initial Communication" },
+			{ y: 1080, label: "Customer Evaluation" },
+			{ y: 665,  label: "Negotiation" },
+			{ y: 578, label: "Order Received" },
+			{ y: 549, label: "Payment" }
+		]
+	}]
+});
+calculatePercentage();
+chart.render();
+
+function calculatePercentage() {
+	var dataPoint = chart.options.data[0].dataPoints;
+	var total = dataPoint[0].y;
+	for(var i = 0; i < dataPoint.length; i++) {
+		if(i == 0) {
+			chart.options.data[0].dataPoints[i].percentage = 100;
+		} else {
+			chart.options.data[0].dataPoints[i].percentage = ((dataPoint[i].y / total) * 100).toFixed(2);
+		}
+	}
+}
+
+}
+</script>
 
 
 <script src="assets/js/jquery-steps/jquery.steps.js"></script>
 
 
+<script>
+ $(document).ready(function(){
+        $("#wizard").steps({
+        headerTag: "h2",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        stepsOrientation: "vertical",
+    });
+});
+</script>
 
 
 <style>
@@ -21,7 +77,7 @@
 }
 
 .wizard>.steps .done a {
-    background: #8f8686 !important;
+    background: #999AA2 !important;
 }
 
 .wizard>.content {
@@ -40,12 +96,12 @@
     display: inline;
     float: left;
     margin: 0px 1.5% 0.5em 0.5%;
-    width:86%;
+    width:83%;
 }
 .wizard.vertical > .steps {
     display: inline;
     float: left;
-    width: 12%;
+    width: 15%;
 }
 .wizard > .content > .body{
     width: 100%;
@@ -698,8 +754,7 @@ ul>li {
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="mt-4 px-2">
-                                                        <div id="spline_area" data-colors='["#5156be", "#2ab57d"]'
-                                                            class="apex-charts" dir="ltr"></div>
+                                                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2791,140 +2846,8 @@ ul>li {
 </div>
 
 <script>
-    $(document).ready(function(){
-        $("#wizard").steps({
-        headerTag: "h2",
-        bodyTag: "section",
-        transitionEffect: "slideLeft",
-        stepsOrientation: "vertical",
-    });
-});
-    
+   
 
-function getChartColorsArray(r) {
-    r = $(r).attr("data-colors");
-    let validJson = false;
-    try {
-        validJson = true;
-        r = JSON.parse(e);
-    } catch {
-        validJson = false
-    }
-    if (validJson) {
-        return (r = JSON.parse(r)).map(function(r) {
-            r = r.replace(" ", "");
-            if (-1 == r.indexOf("--")) return r;
-            r = getComputedStyle(document.documentElement).getPropertyValue(r);
-            return r || void 0;
-        });
-    } else {
-        return false;
-    }
-
-}
-
-
-var columnDatalabelColors = getChartColorsArray("#column_chart_datalabel");
-if (columnDatalabelColors) {
-    var options = {
-        chart: {
-            height: 350,
-            type: "bar",
-            toolbar: {
-                show: !1
-            }
-        },
-        plotOptions: {
-            bar: {
-                borderRadius: 10,
-                dataLabels: {
-                    position: "top"
-                }
-            }
-        },
-        dataLabels: {
-            enabled: !0,
-            formatter: function(e) {
-                return e + "%";
-            },
-            offsetY: -22,
-            style: {
-                fontSize: "12px",
-                colors: ["#304758"]
-            },
-        },
-        series: [{
-            name: "Profit",
-            data: [0, 2.5, 0],
-        }, ],
-        colors: columnDatalabelColors,
-        grid: {
-            borderColor: "#f1f1f1"
-        },
-        xaxis: {
-            categories: [
-                "Jan",
-                "Feb",
-                "March"
-
-            ],
-            position: "top",
-            labels: {
-                offsetY: -18
-            },
-            axisBorder: {
-                show: !1
-            },
-            axisTicks: {
-                show: !1
-            },
-            crosshairs: {
-                fill: {
-                    type: "gradient",
-                    gradient: {
-                        colorFrom: "#D8E3F0",
-                        colorTo: "#BED1E6",
-                        stops: [0, 100],
-                        opacityFrom: 0.4,
-                        opacityTo: 0.5,
-                    },
-                },
-            },
-            tooltip: {
-                enabled: !0,
-                offsetY: -35
-            },
-        },
-        yaxis: {
-            axisBorder: {
-                show: !1
-            },
-            axisTicks: {
-                show: !1
-            },
-            labels: {
-                show: !1,
-                formatter: function(e) {
-                    return e + "%";
-                },
-            },
-        },
-        title: {
-
-            floating: !0,
-            offsetY: 330,
-            align: "center",
-            style: {
-                color: "#444",
-                fontWeight: "500"
-            },
-        },
-    };
-    (chart = new ApexCharts(
-        document.querySelector("#column_chart_datalabel"),
-        options
-    )).render();
-}
 
 
 const hideInvent = () => {
@@ -2985,4 +2908,6 @@ const hideSubTake2 = () => {
     $('#sub_take2').hide()
 }
 </script>
+
+
 <?php require_once('footer.php') ?>
